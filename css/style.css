@@ -4,6 +4,8 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+
 html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -19,6 +21,8 @@ h1,h2,h3,h4,h5,h6,a{
 	font-family:'Ubuntu', sans-serif !important;
 	margin:0;
 }
+
+
 ul,label{
 	margin:0;
 	padding:0;
@@ -179,8 +183,9 @@ ul.dropdown-menu.drp-mnu li a i {
 .w3ls_logo_products_left h1 a span {
     font-size: .3em;
     display: block;
-    color: #FA1818;
-}
+		color: #FA1818;
+		padding-left : 2.5em;
+	}
 .w3ls_logo_products_left1{
 	float: left;
 	margin-top: 2.3em;
@@ -311,7 +316,7 @@ ul.dropdown-menu.drp-mnu li a i {
 	-ms-background-size:cover;
 }
 .w3l_banner_nav_right_banner1{
-	background:url(../images/2.jpg) no-repeat 0px 0px;
+	background:url(../images/everytime.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -319,7 +324,7 @@ ul.dropdown-menu.drp-mnu li a i {
 	-ms-background-size:cover;
 }
 .w3l_banner_nav_right_banner2{
-	background:url(../images/3.jpg) no-repeat 0px 0px;
+	background:url(../images/dorm.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
