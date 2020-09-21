@@ -168,7 +168,7 @@ ul.dropdown-menu.drp-mnu li a i {
 	font-size: 1.5em;
     color: #212121;
     text-decoration: none;
-    text-transform: uppercase;
+    
     display: block;
     background: url(../images/img-sp.png) no-repeat 54px 6px;
     line-height: 1;
@@ -187,22 +187,23 @@ ul.dropdown-menu.drp-mnu li a i {
 		padding-left : 2.5em;
 	}
 .w3ls_logo_products_left1{
-	float: left;
-	margin-top: 2.3em;
+	float: none;
+	margin:2.3em;
+	margin-left:45em;
 }
 .w3ls_logo_products_left1 ul.phone_email li{
 	display:inline-block;
 	color:#212121;
 	font-family: 'Ubuntu', sans-serif;
 /*-- w3layouts --*/
-	margin-right:2em;
+	margin-right:0em;
 }
 .w3ls_logo_products_left1 ul.phone_email li a{
 	color:#212121;
 	text-decoration:none;
 }
 .w3ls_logo_products_left1 ul.phone_email li i{
-	padding-right:1em;
+	padding-right:0em;
 }
 .w3ls_logo_products_left1 ul.special_items li{
 	display:inline-block;
@@ -4262,14 +4263,10 @@ input.checkbox:checked:after {
 	.w3ls_logo_products_left1 {
 		float: none;
 		text-align: center;
+		width: 100%;
 		margin-top: 1em;
 	}
-	.w3ls_logo_products_left {
-		float: none;
-		text-align: center;
-		width: 31%;
-		margin: 0 auto;
-	}
+
 	.w3ls_logo_products_left1:nth-child(3) {
 		margin: 0.5em 0 1em;
 	}
