@@ -23,7 +23,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //font-awesome icons -->
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
-
 <!-- //js -->
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -31,36 +30,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
-<!-- <script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script> -->
-<!-- start-smoth-scrolling -->
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+
+
+<style>
+	#bs-megadropdown-tabs > ul > li{
+		font-family: 'Graduate', cursive;
+		font-size: 0.85em;
+	}
+
+	#bs-megadropdown-tabs > ul > li > a{
+		font-family: 'Nanum Gothic', sans-serif!important;
+		font-size: 1.1em;
+	}
+
+</style>
+
 </head>
 <body>
 <!-- //script-for sticky-nav -->
 	<div class="logo_products">
-		<div class="container" style="margin-left: 8em!important;">
+		<div class="container" style="margin-left: 8em!important; margin-bottom: 1em;">
 			<div class="w3ls_logo_products_left" >
-				<h1><a href="index.html"><span >BaRoNiYup</span>&nbsp;BANI</a></h1>
+				<h1><a href="index.html" class="NamumGFont" ><span class="NamumGFont">BaRoNiYup</span>&nbsp;BANI</a></h1>
 			</div>
 			<div class="w3ls_logo_products_left1">	
-				<ul class="special_items"  style="padding-left: 6em;">
-					<li><a href="events.html">이벤트</a><i>/</i></li>
-					<li><a href="products.html">Hot Deal</a><i>/</i></li>
-					<li><a href="services.html">고객센터</a></li>
+				<ul class="special_items"  style="padding-left: 6.18em;">
+					<li><a href="events.html" class="NamumGFont">이벤트</a><i>/</i></li>
+					<li><a href="products.html" class="NamumGFont">Hot Deal</a><i>/</i></li>
+					<li><a href="services.html" class="NamumGFont">고객센터</a></li>
 				</ul>			
 			</div>
 		</div>
 	</div>
 <!-- //header -->
-
+<!-- products-breadcrumb -->
+<div class="products-breadcrumb" style="background-color: rgba(255, 166, 0, 0.678)!important;">
+	<div class="container">
+		<ul>
+			<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+		</ul>
+	</div>
+</div>
+<!-- //products-breadcrumb -->
 <!-- banner -->
-	<div class="banner">
+	<div class="banner" >
 		<div class="w3l_banner_nav_left">
 			<nav class="navbar nav_bottom">
 			 <!-- Brand and toggle get grouped for better mobile display -->
@@ -80,35 +98,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li style="background-color: rgba(201, 197, 197, 0.308)!important; height:5em!important;">
 							<div class="row-md-12">
 									
-									<div class="col-md-6"  style="margin-top: 1.25em;">
-										<button class="btn btn-block btn-info" > 회원가입 </button>
+								<div class="col-md-6"  style="margin-top: 1.25em;">
+										<a href="signUp.html" class="btn btn-block btn-info NamumGFont"> 회원가입 </a>
 								</div>
 
 								<div class="col-md-6"  style="margin-top: 1.25em;">
-											<button class="btn btn-block  btn-success" > 로그인 </button>
-									</div>
+										<a href="login.html" class="btn btn-block btn-success NamumGFont" > 로그인 </a>
+								</div>
 							</div>
 						</li>
 
-						<li style="background-color: rgba(255, 230, 118, 0.664)!important; height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >개인정보</span></a></li>
-						<li ><a href="products.html">마이 페이지</a></li>
+					<li style="background-color: rgba(255, 230, 118, 0.664)!important; height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >My Place</span></a></li>
+					<li ><a href="products.html">마이 페이지</a></li>
+				
+					<li style="background-color: rgba(255, 230, 118, 0.664); height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >Community</span></a></li>
 					
-						<li style="background-color: rgba(255, 230, 118, 0.664); height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >오늘의 상품</span></a></li>
-						<li><a href="household.html">신상품</a></li>
-										
-						<li style="background-color: rgba(255, 230, 118, 0.664); height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >카테고리별 상품보기</span></a></li>
-						  			<li><a href="vegetables.html">식품(Foods)</a></li>
-										<li><a href="vegetables.html">전자기기(Electronics)</a></li>
-										<li><a href="vegetables.html">도서류(Books)</a></li>
-										<li><a href="vegetables.html">의류(Clothes)</a></li>
-										<li><a href="vegetables.html">기타(etc)</a></li>
+					<li><a href="household.html">바니마켓 공지사항</a></li>
+					<li><a href="household.html">바니마켓 Q & A</a></li>
+
+					<li><a href="household.html">교내게시판</a></li>
+
+					<!--기숙사생 등급에게만 표출-->
+					<li><a href="household.html">기숙사게시판</a></li>
 
 
-						<!-- 관리자 등급 로그인 시에만 관리자 전용페이지 표출-->
-					  	<hr style="display: inline-block">
-							<li style="background-color: rgb(201, 236, 247)!important;">
-										<a href=""><span style="font-weight: bold;">관리자 전용페이지</span></a>
-							</li>
+
+					<li style="background-color: rgba(255, 230, 118, 0.664); height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >SALE LIST</span></a></li>
+					<li><a href="전체.html">전체 (All)</a></li>
+					<li><a href="식품.html">식품 (Foods)</a></li>
+					    <li><a href="전자기기.html">전자기기 (Electronics)</a></li>
+						<li><a href="도서류.html">도서류 (Books)</a></li>
+						<li><a href="의류.html">의류 (Clothes)</a></li>
+						<li><a href="기타.html">기타 (etc)</a></li>
+
+				
+					<!-- 관리자 등급 로그인 시에만 관리자 전용페이지 표출-->
+					  <hr style="display: inline-block">
+
+						<li style="background-color: rgb(201, 236, 247)!important;">
+							<a href=""><span style="font-weight: bold;">관리자 전용페이지</span></a>
+						</li>
 
 									
 					</ul> 
@@ -122,23 +151,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul class="slides">
 						<li>
 							<div class="w3l_banner_nav_right_banner">
-								<h3> BAroNiyup <span>바니마켓</span> 효율적인 소비</h3>
+								<h3 class="NamumGFont"> BAroNiyup <span>바니마켓</span> 효율적인 소비</h3>
 								<br>
-								<h3> <strong style="color:lightgrey">바</strong>로 <strong style="color:lightgrey">니</strong> 옆에 
+								<h3 class="NamumGFont"> <strong style="color:lightgrey">바</strong>로 <strong style="color:lightgrey">니</strong> 옆에 
 										  <span><strong style="color:lightgrey">바니</strong>마켓</span> </h3>
 							</div>
 						</li>
 						<li>
 							<div class="w3l_banner_nav_right_banner1">
-								<h2 style="color:white; font-weight: bold;">EveryTime, EveryWhere</h2>
-								<h3 style="margin-top:10px;">&nbsp;믿고 만나는 같은 학교 학생  </h3>
+								<h2 style="color:white; font-weight: bold;" class="GraduateFont">Every Time, Every Where</h2>
+								<h3 style="margin-top:10px;" class="NamumGFont">&nbsp;믿고 만나는 같은 학교 학생  </h3>
 							</div>
 						</li>
 						<li>
 							<div class="w3l_banner_nav_right_banner2">
-								<h3>기숙사 인증을 통한 <span>안전거래</span> </h3>
-								<h3>낮에도, 밤에도 <span>내 방 앞에서!</span> </h3>
-								<h3>지금 바로 <span>거래하세요</span> </h3>
+								<h3 class="NamumGFont">기숙사 인증을 통한 <span>안전거래</span> </h3>
+								<h3 class="NamumGFont">낮에도, 밤에도 <span>내 방 앞에서!</span> </h3>
+								<h3 class="NamumGFont">지금 바로 <span>거래하세요</span> </h3>
 
 							</div>
 						</li>
@@ -177,7 +206,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">
 											<a href="https://www.apple.com/kr-k12/shop/buy-ipad/ipad-air" target="_blank"><img title=" " alt=" " src="images/1.png" /></a>		
-											<p>IPAD AIR4 10.9형 Liquid Retina A14 Bionic 칩</p>
+											<p class="NamumGFont">IPAD AIR4 10.9형 Liquid Retina A14 Bionic 칩</p>
 											<h4>715,000 <span>학생 할인</span></h4>
 										</div>
 									</div>
@@ -196,7 +225,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">
 											<a href="https://www.samsung.com/sec/pc/galaxy-book-flex-nt730qcj-kc58/" target="_blank"><img title=" " alt=" " src="images/3.png" /></a>		
-											<p> 갤럭시 북 Flex 알파 33.7 Cm Core™ I5 / 256 GB SSD</p>
+											<p class="NamumGFont"> 갤럭시 북 Flex 알파 33.7 Cm Core™ I5 / 256 GB SSD</p>
 											<h4>1,880,000 <span> 1,940,000 </span></h4>
 										</div>
 									</div>
@@ -216,7 +245,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
 											<a href="http://www.11st.co.kr/products/2867995026?utm_medium=%EA%B2%80%EC%83%89&gclid=EAIaIQobChMIqLTg6JP66wIVAXZgCh2XkwsyEAkYECABEgJ_5vD_BwE&utm_source=%EA%B5%AC%EA%B8%80_PC_S_%EC%87%BC%ED%95%91&utm_campaign=%EA%B5%AC%EA%B8%80%EC%87%BC%ED%95%91PC+%EC%B6%94%EA%B0%80%EC%9E%91%EC%97%85&utm_term=" target="_blank"> <img src="images/2.png" alt=" " class="img-responsive" /></a>
-											<p>칼하트 백팩 트레이드 시리즈 &nbsp; 백팩 BRN</p>
+											<p class="NamumGFont">칼하트 백팩 트레이드 시리즈 <br> 백팩 BRN</p>
 											<h4>66,500 <span>70,000</span></h4>
 										</div>
 									</div>
@@ -235,7 +264,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
 											<a href="http://mss.kr/1551767" target="_blank"><img src="images/4.png" alt=" " class="img-responsive" /></a>
-											<p>무신사스토어 GROOVE RHYME<br>
+											<p class="NamumGFont">무신사스토어 GROOVE RHYME<br>
 										       		3PACK SWEAT SHIRTS EDITION</p>
 											<h4>59,000 <span> 165,000</span></h4>
 										</div>
@@ -254,19 +283,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- footer -->
  <div class="footer" style="background-color: rgba(0, 0, 0, 0.295);">
 			<ul style="text-align: center;">
-				<li style=" display: inline-block;"><a href="#" style="color: white;">개인정보 취급방침 |</a>  </li>
-				<li style=" display: inline-block;"><a href="#" style="color: white; ">이용약관 |</a> </li>
-				<li style=" display: inline-block;"><a href="#" style="color: white; ">판매 및 환불법적 고지</a></li>	
+				<li style=" display: inline-block;"><a href="#" style="color: white;" class="NamumGFont"> 개인정보 취급방침 |</a>  </li>
+				<li style=" display: inline-block;"><a href="#" style="color: white;" class="NamumGFont">이용약관 |</a> </li>
+				<li style=" display: inline-block;"><a href="#" style="color: white;" class="NamumGFont">판매 및 환불법적 고지</a></li>	
 			</ul>
 			
 					<ul class="special_items"   style="text-align: center;">
-							<li style=" display: inline-block;"><i class="fa fa-phone" aria-hidden="true"></i>(+82) 10-9310-5128                        | </li>
-							<li style=" display: inline-block;"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:kimbyulha1995@gmail.com" style="color: black;">kimbyulha1995@gmail.com</a></li>
+							<li style=" display: inline-block;" class="NamumGFont"><i class="fa fa-phone" aria-hidden="true"></i>(+82) 10-9310-5128                        | </li>
+							<li style=" display: inline-block;" class="NamumGFont"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:kimbyulha1995@gmail.com" style="color: black;">kimbyulha1995@gmail.com</a></li>
 				</ul>
 	
 
 			<br>
-				<p style="color: white; text-align: center; ">© 2020 BaRoNiYup Market. All rights reserved</p>
+				<p style="color: white; text-align: center; " class="NamumGFont">© 2020 BaRoNiYup Market. All rights reserved</p>
 	
 		</div>
 	
