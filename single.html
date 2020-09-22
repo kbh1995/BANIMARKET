@@ -7,14 +7,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
+<title> 바니마켓 - 게시글 상세보기</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
+	function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -24,790 +24,457 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <!-- //js -->
- <script src='js/okzoom.js'></script>
-  <script>
-    $(function(){
-      $('#example').okzoom({
-        width: 150,
-        height: 150,
-        border: "1px solid black",
-        shadow: "0 0 5px #000"
-      });
-    });
-  </script>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+
+
+<style>
+#bs-megadropdown-tabs > ul > li{
+	font-family: 'Graduate', cursive;
+	font-size: 0.85em;
+}
+
+#bs-megadropdown-tabs > ul > li > a{
+	font-family: 'Nanum Gothic', sans-serif!important;
+	font-size: 1.1em;
+}
+
+
+.w3l_banner_nav_right_banner{
+	background:url(images/detailEx1.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+.w3l_banner_nav_right_banner1{
+	background:url(images/detailEx2.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+.w3l_banner_nav_right_banner2{
+	background:url(images/detailEx3.png) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+
+.w3l_banner_nav_right{
+	margin-top:4em!important;
+	margin-left:0em!important;
+}
+
+body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > div > div.col-md-4 > div > section > div > ol{
+	margin-left:8em!important;
+	color:black;
+}
+
+.flex-control-paging li a {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: none;
+    cursor: pointer;
+		text-indent: -9999px;
+		background-color: lightgray!important;
+    border:2px solid lightgray!important;
+	  border-radius:20px;
+}
+
+.flex-control-paging li a.flex-active { 
+	background: rgb(255, 174, 0)!important;
+    cursor: default;
+    border: 2px solid lightgray!important;
+}
+
+
+</style>
+
 </head>
-	
+
+
 <body>
-<!-- header -->
-	<div class="agileits_header">
-		<div class="w3l_offers">
-			<a href="products.html">Today's special Offers !</a>
-		</div>
-		<div class="w3l_search">
-			<form action="#" method="post">
-				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
-				<input type="submit" value=" ">
-			</form>
-		</div>
-		<div class="product_list_header">  
-			<form action="#" method="post" class="last">
-                <fieldset>
-                    <input type="hidden" name="cmd" value="_cart" />
-                    <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="View your cart" class="button" />
-                </fieldset>
-            </form>
-		</div>
-		<div class="w3l_header_right">
-			<ul>
-				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
-					<div class="mega-dropdown-menu">
-						<div class="w3ls_vegetables">
-							<ul class="dropdown-menu drp-mnu">
-								<li><a href="login.html">Login</a></li> 
-								<li><a href="login.html">Sign Up</a></li>
-							</ul>
-						</div>                  
-					</div>	
-				</li>
-			</ul>
-		</div>
-		<div class="w3l_header_right1">
-			<h2><a href="mail.html">Contact Us</a></h2>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-<!-- script-for sticky-nav -->
-	<script>
-	$(document).ready(function() {
-		 var navoffeset=$(".agileits_header").offset().top;
-		 $(window).scroll(function(){
-			var scrollpos=$(window).scrollTop(); 
-			if(scrollpos >=navoffeset){
-				$(".agileits_header").addClass("fixed");
-			}else{
-				$(".agileits_header").removeClass("fixed");
-			}
-		 });
-		 
-	});
-	</script>
 <!-- //script-for sticky-nav -->
-	<div class="logo_products">
-		<div class="container">
-			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html"><span>Grocery</span> Store</a></h1>
-			</div>
-			<div class="w3ls_logo_products_left1">
-				<ul class="special_items">
-					<li><a href="events.html">Events</a><i>/</i></li>
-					<li><a href="about.html">About Us</a><i>/</i></li>
-					<li><a href="products.html">Best Deals</a><i>/</i></li>
-					<li><a href="services.html">Services</a></li>
-				</ul>
-			</div>
-			<div class="w3ls_logo_products_left1">
-				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">store@grocery.com</a></li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
+<div class="logo_products">
+	<div class="container" style="margin-left: 8em!important; margin-bottom: 1em;">
+		
+		
+		<div class="w3ls_logo_products_left1">	
+			<ul class="special_items"  style="padding-left: 15em;">
+				<li><a href="events.html" class="NamumGFont"></a></li>
+				<div class="brand_logo_container" style="margin-top: 5.5em; ">
+					<a  href="index.html"><img src="images/baniLogo1.jpg" class="brand_logo" alt="Logo"></a>
+				</div>
+			</ul>			
 		</div>
 	</div>
+</div>
 <!-- //header -->
 <!-- products-breadcrumb -->
-	<div class="products-breadcrumb">
-		<div class="container">
-			<ul>
-				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>Single Page</li>
-			</ul>
-		</div>
-	</div>
+<div class="products-breadcrumb" style="background-color: rgba(255, 166, 0, 0.678)!important;">
+<div class="container">
+	<ul>
+		<li ><i class="fa fa-home" aria-hidden="true"></i>
+			<a href="index.html" style="color: black;" class="NamumGFont">Home</a> 
+			<span>|</span>
+		</li>
+		<li class="NamumGFont"> 게시글 상세보기</li>
+	</ul>
+</div>
+</div>
 <!-- //products-breadcrumb -->
 <!-- banner -->
-	<div class="banner">
-		<div class="w3l_banner_nav_left">
-			<nav class="navbar nav_bottom">
-			 <!-- Brand and toggle get grouped for better mobile display -->
-			  <div class="navbar-header nav_2">
-				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-			   </div> 
-			   <!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-					<ul class="nav navbar-nav nav_1">
-						<li><a href="products.html">Branded Foods</a></li>
-						<li><a href="household.html">Households</a></li>
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>				
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>	
-										<li><a href="vegetables.html">Vegetables</a></li>
-										<li><a href="vegetables.html">Fruits</a></li>
-									</ul>
-								</div>                  
-							</div>				
-						</li>
-						<li><a href="kitchen.html">Kitchen</a></li>
-						<li><a href="short-codes.html">Short Codes</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>
-										<li><a href="drinks.html">Soft Drinks</a></li>
-										<li><a href="drinks.html">Juices</a></li>
-									</ul>
-								</div>                  
-							</div>	
-						</li>
-						<li><a href="pet.html">Pet Food</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>
-										<li><a href="frozen.html">Frozen Snacks</a></li>
-										<li><a href="frozen.html">Frozen Nonveg</a></li>
-									</ul>
-								</div>                  
-							</div>	
-						</li>
-						<li><a href="bread.html">Bread & Bakery</a></li>
-					</ul>
-				 </div><!-- /.navbar-collapse -->
-			</nav>
-		</div>
-		<div class="w3l_banner_nav_right">
-			<div class="w3l_banner_nav_right_banner3">
-				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
-			</div>
-			<div class="agileinfo_single">
-				<h5>charminar pulao basmati rice 5 kg</h5>
-				<div class="col-md-4 agileinfo_single_left">
-					<img id="example" src="images/76.png" alt=" " class="img-responsive" />
-				</div>
-				<div class="col-md-8 agileinfo_single_right">
-					<div class="rating1">
-						<span class="starRating">
-							<input id="rating5" type="radio" name="rating" value="5">
-							<label for="rating5">5</label>
-							<input id="rating4" type="radio" name="rating" value="4">
-							<label for="rating4">4</label>
-							<input id="rating3" type="radio" name="rating" value="3" checked>
-							<label for="rating3">3</label>
-							<input id="rating2" type="radio" name="rating" value="2">
-							<label for="rating2">2</label>
-							<input id="rating1" type="radio" name="rating" value="1">
-							<label for="rating1">1</label>
-						</span>
-					</div>
-					<div class="w3agile_description">
-						<h4>Description :</h4>
-						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-							officia deserunt mollit anim id est laborum.Duis aute irure dolor in 
-							reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-							pariatur.</p>
-					</div>
-					<div class="snipcart-item block">
-						<div class="snipcart-thumb agileinfo_single_right_snipcart">
-							<h4>$21.00 <span>$25.00</span></h4>
+<div class="banner" >
+	<div class="w3l_banner_nav_left">
+		<nav class="navbar nav_bottom">
+		 <!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header nav_2">
+				<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+			 </div> 
+			 <!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+				<ul class="nav navbar-nav ">
+				
+					<li style="background-color:white!important; height:5em!important; ">
+						<div class="row-md-12" >
+								
+							<div class="col-md-4"></div>
+							<div class="col-md-8 "  style="margin-top: 1.25em; line-height:25px;">
+								<span class="badge badge-pill badge-info NamumGFont"  style="font-size: 15px; line-height: 22.5px;" >UI개극혐</span>
+								<span class="NamumGFont">님 환영합니다.</span>
+							</div>
 						</div>
-						<div class="snipcart-details agileinfo_single_right_details">
-							<form action="#" method="post">
-								<fieldset>
-									<input type="hidden" name="cmd" value="_cart" />
-									<input type="hidden" name="add" value="1" />
-									<input type="hidden" name="business" value=" " />
-									<input type="hidden" name="item_name" value="pulao basmati rice" />
-									<input type="hidden" name="amount" value="21.00" />
-									<input type="hidden" name="discount_amount" value="1.00" />
-									<input type="hidden" name="currency_code" value="USD" />
-									<input type="hidden" name="return" value=" " />
-									<input type="hidden" name="cancel_return" value=" " />
-									<input type="submit" name="submit" value="Add to cart" class="button" />
-								</fieldset>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div class="clearfix"></div>
+					</li>
+					
+
+				<li style="background-color: rgba(255, 230, 118, 0.664)!important; height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >My Place</span></a></li>
+				<li ><a href="products.html">마이 페이지</a></li>
+			
+				<li style="background-color: rgba(255, 230, 118, 0.664); height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >Community</span></a></li>
+				
+				<li><a href="household.html">바니마켓 공지사항</a></li>
+				<li><a href="faqBoard.html">바니마켓 FAQ</a></li>
+
+				<li><a href="household.html">교내게시판</a></li>
+
+				<!--기숙사생 등급에게만 표출-->
+				<li><a href="household.html">기숙사게시판</a></li>
+
+
+
+				<li style="background-color: rgba(255, 230, 118, 0.664); height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >SALE LIST</span></a></li>
+				<li><a href="전체.html">전체 (All)</a></li>
+				<li><a href="식품.html">식품 (Foods)</a></li>
+						<li><a href="전자기기.html">전자기기 (Electronics)</a></li>
+					<li><a href="도서류.html">도서류 (Books)</a></li>
+					<li><a href="의류.html">의류 (Clothes)</a></li>
+					<li><a href="기타.html">기타 (etc)</a></li>
+
+			
+
+								
+				</ul> 
+			 </div><!-- /.navbar-collapse -->
+		</nav>
+
 	</div>
+	<!-- 게시글 카드 -->
+	<div class="w3l_banner_nav_right" style="margin-top: 0em!important;">
+	<div class="w3_login justify-content-center" >
+		
+				<div class="card_saleDetail ">
+
+					<!-- 카드 헤더-->
+						<div class="row-md-12 " style="margin-left: 50px;">
+
+								<div class="col-sm-8 NamumGFont">
+										<h4 class="NamumGFont">[교내][팝니다]2020 시나공 정보처리기사 필기 / 실기</h4>
+								</div>
+
+								<div class="col-sm-2">
+									<small class="NamumGFont"> 작성자 </small>
+									&nbsp;&nbsp;
+									<span class="NamumGFont"> UI개극혐 </span>
+								</div>
+
+								<div class="col-sm-2">
+									<small class="NamumGFont"> 작성일 </small>
+									&nbsp;&nbsp;
+									<span class="NamumGFont"> 2020.09.23 </span>
+						  	</div>
+							
+								<br /> <hr>
+								
+							</div>
+
+							<!-- 내용 -->
+								<div  class="card-content" >
+
+								<div class="row-md-12" style="margin-top: 1.5em; margin-right: 5em;">
+
+									<!-- 사진 영역 시작-->
+
+										<div class="col-md-4" >
+											<div class="w3l_banner_nav_right" >
+											<section class="slider">
+												<div class="flexslider">
+													<ul class="slides">
+														<li>
+															<div class="w3l_banner_nav_right_banner">
+																
+															</div>
+														</li>
+														<li>
+															<div class="w3l_banner_nav_right_banner1">
+															
+															</div>
+														</li>
+														<li>
+															<div class="w3l_banner_nav_right_banner2">
+
+															</div>
+														</li>
+													</ul>
+												</div>
+											</section>
+										</div>		
+													
+										</div> <!-- 사진 영역 끝-->
+
+
+										<!-- 상세 -->
+										<div class="col-md-5" style="margin-top: 4em; "> 
+												
+												
+												<div class="" style="height: 20em; background-color: rgba(236, 229, 229, 0.295); overflow: auto; ">
+													<p class="NamumGFont-bg" style="padding-bottom:20px;padding-right:20px;padding-left:20px;padding-top:20px;">
+																정보처리산업기사 필기 실기 책 팔아여 <br>
+																이거 보고 필기 실기 둘 다 한 번에 합격했어용 <br>
+																필기책은 사용감 많구요<br>
+																그냥 문제만 보시는 용도로 추천합니다<br>
+																실기책은 기출문제집 빼고 사용감 거의 없어요<br>
+																원래 필기 21000 + 실기 31000 해서 52000원에 샀는데 <br>
+																두 개에 10000원에 팔아여 <br>
+																거래 월~수 오전 9시부터 오후 6시까지<br>
+																나래관에서 직거래 가능해여<br>
+																현금 계좌이체 다 돼요<br>
+																스크롤 테스트하기 너무 힘들다<br>
+																div height 넘어가면 <br>
+																overflow:auto;로 스크롤링 <br>
+													</p>
+														
+												</div>
+
+												<br>
+
+												<div class="row-md-12" style="height: 1em;">
+												<div class="col-md-6" style="height: 2em; padding-left: 12px;"> 
+													<span class="badge badge-pill badge-primary NamumGFont " style="font-size: 15px;"> 가격 </span>	
+													&nbsp;&nbsp;
+													<strong class="NamumGFont" style="font-size: 20px; "> 10000 </strong>
+													<span class="NamumGFont " style="font-size: 15px;"> 원 </span>
+												</div>
+
+												<div class="col-md-6"  style="height: 2em; padding-left: 5px;"> 
+													<span class="badge badge-pill badge-primary NamumGFont " style="font-size: 15px;"> 상태 </span>	
+													&nbsp;&nbsp;
+													<strong class="NamumGFont"> 판매 중 </strong>
+												</div>
+											</div>
+
+
+											<div class="row-md-12" style="height: 5.9em;">
+
+												<div class="col-md-12">
+												<a href="" class="btn btn-block btn-warning NamumGFont " style="height: 5em; line-height: 4.5em;" >채팅하기</a>
+											</div>
+											</div>
+
+												<div class="row-12" style="margin-top: 1em;">
+												<div class="col-md-6">
+													<a href="" class="btn btn-block badge-self NamumGFont" style="color: white;">목록으로</a>
+												</div>
+
+												<div class="col-md-6"> <!--신고 모달 시작-->
+												         <a href="" class="btn badge-danger  btn-block" data-toggle="modal" data-target="#exampleModal"  style="color: white;">신고하기</a>
+            						</div>
+
+												<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+														<div class="modal-dialog " role="document" style="padding-left: 200px; padding-right: 200px; padding-top:300px;padding-bottom:300px;">
+															<div class="modal-content modal-lg">
+																<div class="modal-header">
+																	<h5 class="modal-title" id="exampleModalLabel">해당 글 신고하기</h5>
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																		<span aria-hidden="true">&times;</span>
+																	</button>
+																</div>
+																<div class="modal-body">
+																		
+																		<form method="POST">
+
+																			<input type="hidden" value="" placeholder="글 번호 ! " id="">
+																				
+																				<small>신고분류</small>
+																				&nbsp;&nbsp;
+																				<select>
+																						<option value="">신고분류 선택</option>
+																						<option value="">욕설 / 비방</option>
+																						<option value="">허위상품 게시</option>
+																						<option value="">쓸 수 없는 상품</option>
+																						<option value="">공지위반</option>
+																						<option value="">기타</option>
+																				</select>
+
+																				<br><br>
+																				<small style="line-height: -4em;">신고사유</small>
+																				<textarea class="NamumGFont"  style="height: 8em; width: 750px; margin-left: 14px;">기타 선택 사유 또는 추가 설명 작성</textarea>
+															
+
+																<br><br>
+
+																<div class="modal-footer" style="margin-right: 1em;">
+																	<button type="reset" class="btn btn-info" data-dismiss="modal">신고 취소</button>
+																	<button type="submit" class="btn btn-danger">신고하기</button>
+																</div>
+															</form>
+															</div>
+															</div>
+														</div>
+												
+												</div> <!-- 신고 모달 끝 -->
+											</div>
+
+										</div>
+										<!--상세 끝-->
+
+
+										<!--프로필 시작-->
+										<div class="col-md-3 bg-warning" style="margin-top: 4em ; height: 500px; ">
+
+											<div class="brand_logo_container " style="margin-top: 6.5em; margin-left: 5.5em; ">
+													<a  href="index.html"><img src="images/userProfileEx.jpg" class="brand_logo" alt="Logo"></a>
+											</div>
+
+											<div class="" style="margin-top: 13em; text-align: center; height: 500px; ">
+												
+												<span class="badge badge-pill badge-info NamumGFont-bg"  >UI개극혐</span>
+
+												<br><br>
+
+												<span class="NamumGFont">기숙사생</span>
+												
+												<hr>
+												<span class="NamumGFont">평점</span>
+												&nbsp;
+												<span class="badge badge-pill badge-info NamumGFont-bg " >★★★★★ <small> ( 10.0점 )</small></span>
+
+												<br><br>
+
+												<span class="NamumGFont">최근 후기</span> <!-- 후기 작성일 기준 3개 표출-->
+												<br>
+												<span class="badge badge-pill badge-self NamumGFont-bg" style="width: 15em; margin-bottom: 10px;" >
+													시간 잘 맞춰서 좋았어요
+												</span>
+												
+												<span class="badge badge-pill badge-self NamumGFont-bg" style="width: 15em; margin-bottom: 10px;" >
+													설명을 친절하게 해줬음
+												</span>
+
+												<span class="badge badge-pill badge-self NamumGFont-bg" style="width: 15em; margin-bottom: 10px;" >
+													ㄱㅊㄱㅊ 매너있음
+												</span>
+
+											</div>
+
+
+										</div> <!-- 프로필 끝 -->
+										
+
+
+								</div>								
+							</div> <!-- 내용 끝 -->
+
+							<br /> <hr>
+							<div class="row-12">
+								<div class="col-md-7" style="margin-right: 6.5em;"></div>
+								<div class="col-md-2">
+									<a href="" class="btn btn-block badge-self NamumGFont" style="color: white;">수정</a>
+								</div>
+								<div class="col-md-2">
+									<a href="" class="btn btn-block badge-danger NamumGFont" style="color: white;">삭제</a>
+								</div>
+								</div>
+				</div>
+				
+			</div>
+			
+		</div>
+
+	<div class="clearfix"></div>
+</div>
 <!-- //banner -->
-<!-- brands -->
-	<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_popular">
-		<div class="container">
-			<h3>Popular Brands</h3>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>food</h6>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/5.png" alt=" " class="img-responsive" /></a>
-											<p>knorr instant soup (100 gm)</p>
-											<h4>$3.00 <span>$5.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="knorr instant soup" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/6.png" alt=" " class="img-responsive" /></a>
-											<p>chings noodles (75 gm)</p>
-											<h4>$5.00 <span>$8.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="chings noodles" />
-													<input type="hidden" name="amount" value="5.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/7.png" alt=" " class="img-responsive" /></a>
-											<p>lahsun sev (150 gm)</p>
-											<h4>$3.00 <span>$5.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/8.png" alt=" " class="img-responsive" /></a>
-											<p>premium bake rusk (300 gm)</p>
-											<h4>$5.00 <span>$7.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="premium bake rusk" />
-													<input type="hidden" name="amount" value="5.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>vegetables & fruits</h6>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/9.png" alt=" " class="img-responsive" /></a>
-											<p>fresh spinach (palak)</p>
-											<h4>$2.00 <span>$3.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="fresh spinach" />
-													<input type="hidden" name="amount" value="2.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/10.png" alt=" " class="img-responsive" /></a>
-											<p>fresh mango dasheri (1 kg)</p>
-											<h4>$5.00 <span>$8.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="fresh mango dasheri" />
-													<input type="hidden" name="amount" value="5.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/11.png" alt=" " class="img-responsive" /></a>
-											<p>fresh apple red (1 kg)</p>
-											<h4>$6.00 <span>$8.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="fresh apple red" />
-													<input type="hidden" name="amount" value="6.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/12.png" alt=" " class="img-responsive" /></a>
-											<p>fresh broccoli (500 gm)</p>
-											<h4>$4.00 <span>$6.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="fresh broccoli" />
-													<input type="hidden" name="amount" value="4.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>beverages</h6>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/13.png" alt=" " class="img-responsive" /></a>
-											<p>mixed fruit juice (1 ltr)</p>
-											<h4>$3.00 <span>$4.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="mixed fruit juice" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/14.png" alt=" " class="img-responsive" /></a>
-											<p>prune juice - sunsweet (1 ltr)</p>
-											<h4>$4.00 <span>$5.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="prune juice - sunsweet" />
-													<input type="hidden" name="amount" value="4.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/15.png" alt=" " class="img-responsive" /></a>
-											<p>coco cola zero can (330 ml)</p>
-											<h4>$3.00 <span>$5.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="coco cola zero can" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/16.png" alt=" " class="img-responsive" /></a>
-											<p>sprite bottle (2 ltr)</p>
-											<h4>$3.00 <span>$4.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="sprite bottle" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-		</div>
-	</div>
-<!-- //brands -->
-<!-- newsletter -->
-	<div class="newsletter">
-		<div class="container">
-			<div class="w3agile_newsletter_left">
-				<h3>sign up for our newsletter</h3>
-			</div>
-			<div class="w3agile_newsletter_right">
-				<form action="#" method="post">
-					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-					<input type="submit" value="subscribe now">
-				</form>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-<!-- //newsletter -->
+
 <!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="col-md-3 w3_footer_grid">
-				<h3>information</h3>
-				<ul class="w3_footer_grid_list">
-					<li><a href="events.html">Events</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="products.html">Best Deals</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="short-codes.html">Short Codes</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 w3_footer_grid">
-				<h3>policy info</h3>
-				<ul class="w3_footer_grid_list">
-					<li><a href="faqs.html">FAQ</a></li>
-					<li><a href="privacy.html">privacy policy</a></li>
-					<li><a href="privacy.html">terms of use</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 w3_footer_grid">
-				<h3>what in stores</h3>
-				<ul class="w3_footer_grid_list">
-					<li><a href="pet.html">Pet Food</a></li>
-					<li><a href="frozen.html">Frozen Snacks</a></li>
-					<li><a href="kitchen.html">Kitchen</a></li>
-					<li><a href="products.html">Branded Foods</a></li>
-					<li><a href="household.html">Households</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 w3_footer_grid">
-				<h3>twitter posts</h3>
-				<ul class="w3_footer_grid_list1">
-					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>01 day ago</i><span>Non numquam <a href="#">http://sd.ds/13jklf#</a>
-						eius modi tempora incidunt ut labore et
-						<a href="#">http://sd.ds/1389kjklf#</a>quo nulla.</span></li>
-					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>02 day ago</i><span>Con numquam <a href="#">http://fd.uf/56hfg#</a>
-						eius modi tempora incidunt ut labore et
-						<a href="#">http://fd.uf/56hfg#</a>quo nulla.</span></li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-			<div class="agile_footer_grids">
-				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
-					<div class="w3_footer_grid_bottom">
-						<h4>100% secure payments</h4>
-						<img src="images/card.png" alt=" " class="img-responsive" />
-					</div>
-				</div>
-				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
-					<div class="w3_footer_grid_bottom">
-						<h5>connect with us</h5>
-						<ul class="agileits_social_icons">
-							<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="wthree_footer_copy">
-				<p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-			</div>
-		</div>
-	</div>
+<div class="footer" style="background-color: rgba(0, 0, 0, 0.295);">
+	<ul style="text-align: center;">
+		<li style=" display: inline-block;"><a href="#" style="color: white;" class="NamumGFont"> 개인정보 취급방침 |</a>  </li>
+		<li style=" display: inline-block;"><a href="#" style="color: white;" class="NamumGFont">이용약관 |</a> </li>
+		<li style=" display: inline-block;"><a href="#" style="color: white;" class="NamumGFont">판매 및 환불법적 고지</a></li>	
+	</ul>
+	
+			<ul class="special_items"   style="text-align: center;">
+					<li style=" display: inline-block;" class="NamumGFont"><i class="fa fa-phone" aria-hidden="true"></i>(+82) 10-9310-5128                        | </li>
+					<li style=" display: inline-block;" class="NamumGFont"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:kimbyulha1995@gmail.com" style="color: black;">kimbyulha1995@gmail.com</a></li>
+		</ul>
+
+
+	<br>
+		<p style="color: white; text-align: center; " class="NamumGFont">© 2020 BaRoNiYup Market. All rights reserved</p>
+
+</div>
+
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function(){
-    $(".dropdown").hover(            
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-            $(this).toggleClass('open');        
-        },
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-            $(this).toggleClass('open');       
-        }
-    );
-});
-</script>
+
+
+	<!-- flexSlider -->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+	$(window).load(function(){
+		$('.flexslider').flexslider({
+		animation: "slide",
+		start: function(slider){
+			$('body').removeClass('loading');
+		}
+		});
+	});
+	</script>
+<!-- //flexSlider -->
+
+
+
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {

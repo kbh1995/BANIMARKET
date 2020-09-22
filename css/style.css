@@ -7,6 +7,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 /* 새로 만든 css */
 
+
+
 .GraduateFont{
 	font-family: 'Graduate', cursive!important;
 }
@@ -14,6 +16,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 .NamumGFont{
 	font-family: 'Nanum Gothic', sans-serif!important;
+}
+
+.NamumGFont-bg{
+	font-family: 'Nanum Gothic', sans-serif!important;
+	font-size:larger;
 }
 
 body > div.banner > div.w3l_banner_nav_right.justify-content-center > div > div > div.d-flex.justify-content-center.form_container > form > div.input-group.mb-3 > div > span{
@@ -28,14 +35,75 @@ body > div.banner > div.w3l_banner_nav_right.justify-content-center > div > div 
 	margin-left: 20em;
 }
 
+.card_boardList{
+	height: 900px;
+	width: 1700px;
+	margin-top: 0em;
+	margin-bottom: auto;	
+	background-color: #ffffff;
+	overflow: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+.card_saleDetail{
+	height: 900px;
+	width: 1700px;
+	margin-top: 0em;
+	margin-bottom: auto;	
+	background-color: #ffffff;
+	overflow: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+.card-content{
+	height: 700px; 
+	width:1600px; 
+	margin-left: 25px; 
+	overflow:hidden;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.card_faq{
+	height: 900px;
+	width: 1700px;
+	margin-top: 5em;
+	margin-bottom: auto;	
+	background-color: #ffffff;
+	overflow: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
 
 .user_card_signup {
-	height: 800px;
-	width: 1000px;
+	height: 900px;
+	width: 1500px;
 	margin-top: 5em;
 	margin-bottom: auto;
-	margin-left: 22.5em;
-	margin-right:22.5em;
 	background-color: #ffffff;
 	position: relative;
 	display: flex;
@@ -212,14 +280,7 @@ span.glyphicon.glyphicon-shopping-cart.my-cart-icon.my-cart-icon-affix {
     position: relative;
     display: block;
 }
-i.badge.badge-notify.my-cart-badge {
-    font-style: normal;
-    background: #FA1818;
-    font-size: 14px;
-    position: absolute;
-    top: -10px;
-    right:-22px;
-}
+
 .product_list_header span {
     font-size: 1em;
     color: #fff;
@@ -421,7 +482,7 @@ ul.dropdown-menu.drp-mnu li a i {
 .navbar-nav {
     float: none;
     margin: 0;
-	border-top: 1px solid #B58F62;
+	
 }
 .navbar-nav > li > a {
     color: #212121;
@@ -1789,6 +1850,14 @@ li.list-group-item1 {
 }
 .badge-danger {
 	background-color: #e51c23;
+}
+
+.badge-self{
+	background-color: rgba(51, 51, 51, 0.664);
+}
+
+.badge-info{
+	background-color: #056145;
 }
 .grid_3 p{
 	line-height: 2em;

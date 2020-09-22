@@ -35,7 +35,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
+
 <script src="js/fileupload.js"></script>
+<script src="js/dateSelect.js"></script>
 
 
 <!-- start-smoth-scrolling -->
@@ -55,30 +57,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 	
 <body>
-<!-- //script-for sticky-nav -->
-<div class="logo_products">
-	<div class="container" style="margin-left: 8em!important; margin-bottom: 1em;">
-		<div class="w3ls_logo_products_left" >
-			<h1><a href="index.html" class="NamumGFont" ><span class="NamumGFont">BaRoNiYup</span>&nbsp;BANI</a></h1>
-		</div>
-		<div class="w3ls_logo_products_left1">	
-			<ul class="special_items"  style="padding-left: 6.18em;">
-				<li><a href="events.html" class="NamumGFont">이벤트</a><i>/</i></li>
-				<li><a href="products.html" class="NamumGFont">Hot Deal</a><i>/</i></li>
-				<li><a href="services.html" class="NamumGFont">고객센터</a></li>
-			</ul>			
+	<div class="logo_products">
+		<div class="container" style="margin-left: 8em!important; margin-bottom: 1em;">
+			
+			
+			<div class="w3ls_logo_products_left1">	
+				<ul class="special_items"  style="padding-left: 15em;">
+					<li><a href="events.html" class="NamumGFont"></a></li>
+					<div class="brand_logo_container" style="margin-top: 5.5em; ">
+						<a  href="index.html"><img src="images/baniLogo1.jpg" class="brand_logo" alt="Logo"></a>
+					</div>
+				</ul>			
+			</div>
 		</div>
 	</div>
-</div>
 <!-- //header -->
-
 
 <!-- products-breadcrumb -->
 	<div class="products-breadcrumb" style="background-color: rgba(255, 166, 0, 0.678)!important;">
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>Log-in</li>
+				<li>Sign-Up</li>
 			</ul>
 		</div>
 	</div>
@@ -91,23 +91,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h3 class="NamumGFont">회원가입</h3>				  
 					<div class="user_card_signup ">
 						<div class="d-flex justify-content-center">
-							<div class="brand_logo_container">
-								<img src="images/baniLogo.jpg" class="brand_logo" alt="Logo">
+							<div class="brand_logo_container" style="margin-left: 10em;">
+								<img src="images/baniLogo1.jpg" class="brand_logo" alt="Logo">
 							</div>
 						</div>
 						<div class="d-flex justify-content-center form_container" >
 							
-							<form method="POST" enctype="multipart/form-data">
+							<form method="POST" enctype="multipart/form-data" style="margin-left: 25em;">
 								<div class="input-group mb-3 " >
 									<div class="input-group-append " >
 										<span class="glyphicon glyphicon-envelope"></span>  <label style="padding-right: 2em;">아이디 </label>
 										<input type="text" name="" class=" input_user NamumGFont" value="" placeholder="&nbsp;&nbsp;5~30글자 입력 가능" style="width: 35em;">
-										<button onclick="" class="btn btn-sm btn-success NamumGFont">중복검사</button> <!-- or Ajax 실시간 중복검사-->
+										<small class="NamumGFont" style="color: green;">&nbsp;&nbsp; 사용 가능</small>
+										<small class="NamumGFont" style="color: red;">&nbsp;&nbsp; 사용 불가능</small>
 									</div>
 								</div>
 								<div class="input-group mb-2">
 									<div class="input-group-append">
-										<span class="glyphicon glyphicon-console"></span>  <label style="padding-right: 1em;">비밀번호 </label>
+										<span class="glyphicon glyphicon-lock"></span>  <label style="padding-right: 1em;">비밀번호 </label>
 										<input type="password" name="" class="input_pass NamumGFont" value="" placeholder="&nbsp;&nbsp;8~30글자 입력 가능 " style="width: 35em;">
 										<small class="NamumGFont" style="color: green;">&nbsp;&nbsp; 사용 가능</small>
 										<small class="NamumGFont" style="color: red;">&nbsp;&nbsp; 사용 불가능</small>
@@ -115,40 +116,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="input-group mb-2">
 									<div class="input-group-append">
-										<span class="glyphicon glyphicon-console"></span>  <label style="padding-right: 3em;">확인 </label>
+										<span class="glyphicon glyphicon-lock"></span>  <label style="padding-right: 3em;">확인 </label>
 										<input type="password" name="" class="input_pass NamumGFont" value="" placeholder="&nbsp;&nbsp;비밀번호 확인 " style="width: 35em;">
 										<small class="NamumGFont" style="color: green;">&nbsp;&nbsp; 일치</small>
 										<small class="NamumGFont" style="color: red;">&nbsp;&nbsp; 불일치</small>
 									</div>
 								</div>
 								
-								
+		
 								<div class="input-group mb-2">
 									<div class="input-group-append">
-										<span class="glyphicon glyphicon-console"></span>  <label style="padding-right: 2em;"> 닉네임 </label>
+										<span class="glyphicon glyphicon-user"></span> 	<label style="padding-right: 2em;"> 닉네임 </label>
 										<input type="text" name="" class="input_pass NamumGFont" value="" placeholder="&nbsp;&nbsp;10글자 입력 가능 " style="width: 35em;">
-										<button onclick="" class="btn btn-sm btn-success NamumGFont">중복검사</button> <!-- or Ajax 실시간 중복검사-->
+										<small class="NamumGFont" style="color: green;">&nbsp;&nbsp; 사용 가능</small>
+										<small class="NamumGFont" style="color: red;">&nbsp;&nbsp; 사용 불가능</small>
 									</div>
 								</div>
 
 								<div class="input-group mb-2">
 									<div class="input-group-append">
-										<span class="glyphicon glyphicon-console"></span>  <label style="padding-right: 3em;"> 주소 </label>
-										<input type="text" name="" class="input_pass NamumGFont" value="" placeholder="API들어갈곳" style="width: 35em;" readonly>
+										<span class="glyphicon glyphicon-search"></span>  <label style="padding-right: 3em;"> 주소 </label>
+										<input type="text" name="" class="input_pass NamumGFont" value="" placeholder="&nbsp;&nbsp;API들어갈곳" style="width: 35em;" readonly>
 										<button onclick="" class="btn btn-sm btn-info NamumGFont">주소검색</button>
 									</div>
 								</div> <!-- 주소 API -->
 
 								<div class="input-group mb-2">
 									<div class="input-group-append">
-										<span class="glyphicon glyphicon-console"></span>  <label style="padding-right: 1em;"> 상세주소 </label>
+										<span class="glyphicon glyphicon-search"></span>  <label style="padding-right: 1em;"> 상세주소 </label>
 										<input type="text" name="" class="input_pass NamumGFont" value="" placeholder="&nbsp;&nbsp;상세 주소 입력" style="width: 35em;">
 									</div>
 								</div>
 						
 								<div class="input-group mb-2">
 									<div class="input-group-append">
-										<span class="glyphicon glyphicon-console"></span>  <label style="padding-right: 2em;"> 연락처 </label>
+										<span class="glyphicon glyphicon-phone-alt"></span>  <label style="padding-right: 2em;"> 연락처 </label>
 										<input type="number" name="" class=" NamumGFont" value="" placeholder="&nbsp;&nbsp;010" style="width: 10.3em;">
 										<i> &nbsp; - &nbsp; </i>
 										<input type="number" name="" class=" NamumGFont" value="" placeholder="&nbsp;&nbsp;1234" style="width: 10.5em;">
@@ -157,28 +159,62 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>
 
+								
+								<hr style="margin-right: 25em;">
+
 								<div class="input-group mb-2">
 									<div class="input-group-append NamumGFont">
-										<span class="glyphicon glyphicon-console"></span>  <label style="padding-right: 1em;"> 회원구분 </label>
+										<span class="glyphicon glyphicon-education"></span>  <label style="padding-right: 1em;"> 회원구분 </label>
 										<input type="radio" name="student" class="NamumGFont" value="재학생">&nbsp;재학생
 										<small>(학교 재학 증빙 필요)</small>
-										<i style="padding-left: 3em;">&nbsp;</i>
+										<i style="padding-left: 4em;">&nbsp;</i>
 										<input type="radio" name="dorm" class="NamumGFont" value="기숙사생">&nbsp;기숙사생
 										<small>(학교 재학 및 기숙사 입사 증빙 필요)</small>
 									</div>
 								</div>
 
+								<div class="input-group mb-2">
+									<div class="input-group-append">
+										<span class="glyphicon glyphicon-chevron-right"></span>  <label style="padding-right: 3em;"> 학번 </label>
+										<input type="text" name="" class="input_pass NamumGFont" value="" placeholder="&nbsp;&nbsp;학번 입력" style="width: 14.5em;">
+									
+										<i style="padding-left: 3em;">&nbsp;</i>
+									
+										<i class="glyphicon glyphicon-chevron-right"></i>  <label style="padding-right: 1em;"> 생년월일 </label>
+											<select id="years"></select>
+											<select id="months"></select>
+											<select id="days"></select>
+									</div>
+								</div>
+
+
 						<div class="input-group mb-2">
 							<div class="input-group-append NamumGFont ">
-								<span class="glyphicon glyphicon-console"></span>  <label style="padding-right: 1em;"> 학교선택 </label>
+								<span class="glyphicon glyphicon-chevron-right"></span>  <label style="padding-right: 1em;"> 학교선택 </label>
 											
 											
 											<select name="location" style="width: 10em;">
-													<option value="">지역 선택</option>
+													<option value="" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;지역 선택</option>
+													<option value="seoul">&nbsp;서울특별시</option>
+													<option value="busan">&nbsp;부산광역시</option>
+													<option value="daegu">&nbsp;대구광역시</option>
+													<option value="incheon">&nbsp;인천광역시</option>
+													<option value="gwangju">&nbsp;광주광역시</option>
+													<option value="daejeon">&nbsp;대전광역시</option>
+													<option value="ulsan">&nbsp;울산광역시</option>
+													<option value="sejong">&nbsp;세종특별자치시</option>
+													<option value="gyeonggido">&nbsp;경기도</option>
+													<option value="gangwondo">&nbsp;강원도</option>
+													<option value="chungcheongdo">&nbsp;충청도</option>
+													<option value="jeonrado">&nbsp;전라도</option>
+													<option value="gyeongsangdo">&nbsp;경상도</option>
+													<option value="jejudo">&nbsp;제주도</option>
 											</select>
 
-											<select name="location" style="width: 25em;">
-												<option value="">학교 선택</option>
+											<!-- 지역 선택 시 ajax로 schoolName select에 해당 지역 학교 표출 필요 -->
+
+											<select name="schoolName" style="width: 24.5em;">
+												<option value="" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;학교 선택</option>
 										</select>
 
 							</div>
@@ -187,18 +223,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						<div class="input-group mb-2">
 							<div class="input-group-append ">
-								<span class="glyphicon glyphicon-console "></span>  <label style="padding-right: 1em;"> 사진첨부 </label>
+								<span class="glyphicon glyphicon-floppy-disk "></span>  <label style="padding-right: 1em;"> 사진첨부 </label>
 
 								<div class="upload-btn-wrapper" style="display: inline-block!important;">
 									<input type="file" id="input_file" multiple="multiple" style="height: 100%; display: inline-block!important;" />
 									<button class="upload-btn NamumGFont" style="width:15em;" >파일선택</button>
-									<small style="display: inline-block;" class="NamumGFont">구분에 따라 증빙서류를 첨부해주세요</small>
+									<small style="display: inline-block; padding-left: 60px; color: red;" class="NamumGFont">구분에 따라 증빙서류를 첨부해주세요</small>
 							</div>
 							
 							<br>
 
 							<div id="dropZone"
-								 style="margin-top:1em;margin-left:16.5em;width: 35em; height: 100px; border: solid 1px; border-color: black; display: inline-block!important;">
+								 style="margin-top:1em;margin-left:6.5em;width: 35em; height: 100px; border: solid 1px; border-color: black; display: inline-block!important;">
                 <div id="fileDragDesc" class="NamumGFont" style="display: inline-block!important;"> 파일 드래그 </div>
             
                 
@@ -212,8 +248,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 					</div>
 
+					<hr style="margin-right: 25em;">
 
-
+					<div class="d-flex justify-content-center mt-3" style="margin-left:6.5em;">
+								<button type="submit" name="button" class="btn  NamumGFont" style="width: 30em; background-color: rgba(255, 166, 0, 0.678);">회원가입</button>
+					</div>
 
 
 						</div>

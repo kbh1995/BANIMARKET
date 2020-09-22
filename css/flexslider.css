@@ -84,7 +84,7 @@ html[xmlns] .slides {display: block;}
     bottom: 0;
 }
 .flex-control-nav li {
-	margin: 0 5px;
+    margin: 0 5px; /* 건들지 말 것 */
     display: inline-block;
     zoom: 1;
 }
@@ -103,7 +103,7 @@ html[xmlns] .slides {display: block;}
     cursor: default;
     border: 2px solid #84C639;
 }
-.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs {margin: 0 0 0; position: static; overflow: hidden;}
 .flex-control-thumbs li {width: 25%; float: left; margin: 0;}
 .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
 .flex-control-thumbs img:hover {opacity: 1;}
