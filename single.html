@@ -160,7 +160,7 @@ body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > di
 								
 							<div class="col-md-4"></div>
 							<div class="col-md-8 "  style="margin-top: 1.25em; line-height:25px;">
-								<span class="badge badge-pill badge-info NamumGFont"  style="font-size: 15px; line-height: 22.5px;" >UI개극혐</span>
+								<span class="badge badge-pill badge-info NamumGFont"  style="font-size: 15px; line-height: 22.5px;" >바니바니당근당근</span>
 								<span class="NamumGFont">님 환영합니다.</span>
 							</div>
 						</div>
@@ -214,7 +214,7 @@ body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > di
 								<div class="col-sm-2">
 									<small class="NamumGFont"> 작성자 </small>
 									&nbsp;&nbsp;
-									<span class="NamumGFont"> UI개극혐 </span>
+									<span class="NamumGFont"> 바니바니당근당근 </span>
 								</div>
 
 								<div class="col-sm-2">
@@ -288,19 +288,65 @@ body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > di
 												<br>
 
 												<div class="row-md-12" style="height: 1em;">
-												<div class="col-md-6" style="height: 2em; padding-left: 12px;"> 
+												<div class="col-md-4" style="height: 2em; padding-left: 12px;"> 
 													<span class="badge badge-pill badge-primary NamumGFont " style="font-size: 15px;"> 가격 </span>	
 													&nbsp;&nbsp;
 													<strong class="NamumGFont" style="font-size: 20px; "> 10000 </strong>
 													<span class="NamumGFont " style="font-size: 15px;"> 원 </span>
 												</div>
 
-												<div class="col-md-6"  style="height: 2em; padding-left: 5px;"> 
+												<div class="col-md-4"  style="height: 2em; "> 
 													<span class="badge badge-pill badge-primary NamumGFont " style="font-size: 15px;"> 상태 </span>	
 													&nbsp;&nbsp;
 													<strong class="NamumGFont"> 판매 중 </strong>
 												</div>
+
+												<div class="col-md-2"  style="height: 2em; "> 
+													<span class="badge badge-pill badge-primary NamumGFont " style="font-size: 15px;"> 찜하기 </span>	
+												</div>
+												<div class="col-md-2 justify-content-center"  style="height: 2em;" > 
+													
+														<span id="loveit" class=" glyphicon glyphicon-heart  " style="font-size: 40px; line-height: 10px; color: gray;"></span>
+							
+												</div>
 											</div>
+
+											<script>
+												/* 	loveit 클릭 시	*/
+
+												$("#loveit ").click( function() { 
+													
+													if (confirm("해당 상품을 찜하시겠습니까?") == true){    //확인
+
+														/*Ajax*/
+
+													/* user_loveit 컬럼에 글 주소 삽입 
+													    마이페이지 내 찜 목록에서 뿌리기 
+															찜 목록 삭제는 내 찜 목록에서 가능*/
+
+
+														} else{   //취소
+
+																return false;
+
+														}
+
+																							
+							
+													/*Ajax*/
+
+													/* user_loveit 컬럼에 글 주소 삽입 
+													    마이페이지 내 찜 목록에서 뿌리기 
+															찜 목록 삭제는 내 찜 목록에서 가능*/
+
+															
+
+              					 });
+
+												 
+
+											</script>
+										
 
 
 											<div class="row-md-12" style="height: 5.9em;">
@@ -377,12 +423,15 @@ body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > di
 
 											<div class="" style="margin-top: 13em; text-align: center; height: 500px; ">
 												
-												<span class="badge badge-pill badge-info NamumGFont-bg"  >UI개극혐</span>
-
+												<span class="badge badge-pill badge-info NamumGFont-bg"  >바니바니당근당근</span>
+												
 												<br><br>
 
 												<span class="NamumGFont">기숙사생</span>
-												
+												<i class="NamumGFont">&nbsp;&nbsp; | &nbsp;&nbsp;</i>
+												<a href="otherProfile.html" class="NamumGFont" style="color:black" >&nbsp;&nbsp;<span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;놀러가기</a>
+												<small class="NamumGFont">  </small>
+
 												<hr>
 												<span class="NamumGFont">평점</span>
 												&nbsp;
