@@ -7,14 +7,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title> 바니마켓 - FAQ</title>
+<title> 바니마켓 - 게시글 수정</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
+	function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -24,61 +24,87 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <!-- //js -->
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
 
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
+<script src="js/fileupload.js"></script>
 
-<style>
-	#bs-megadropdown-tabs > ul > li{
-		font-family: 'Graduate', cursive;
-		font-size: 0.85em;
-	}
-
-	#bs-megadropdown-tabs > ul > li > a{
-		font-family: 'Nanum Gothic', sans-serif!important;
-		font-size: 1.1em;
-	}
-	
-	.accordion-box ul{
-		list-style-type: none;
-	}
-
-	.accordion-box{
-  width: 90%;
-  height:5em;
-	margin:  0 auto;
-	margin-left: 4em;
-}
-p.title{
-  width: 100%;  
-	line-height: 60px; 
-	font-size:15px;
-  background-color: lemonchiffon; 
-  color: rgb(0, 0, 0); 
-  box-sizing: border-box;
-  padding: 0 10px;
-}
-.con{
-  padding: 20px; 
-  display:none;
-}
-</style>
-
-<script src="css/faqBoard.css"></script>
 <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
-<!-- start-smoth-scrolling -->
+
+
+<style>
+#bs-megadropdown-tabs > ul > li{
+	font-family: 'Graduate', cursive;
+	font-size: 0.85em;
+}
+
+#bs-megadropdown-tabs > ul > li > a{
+	font-family: 'Nanum Gothic', sans-serif!important;
+	font-size: 1.1em;
+}
+
+
+.w3l_banner_nav_right_banner{
+	background:url(images/detailEx1.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+.w3l_banner_nav_right_banner1{
+	background:url(images/detailEx2.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+.w3l_banner_nav_right_banner2{
+	background:url(images/detailEx3.png) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+
+.w3l_banner_nav_right{
+	margin-top:4em!important;
+	margin-left:0em!important;
+}
+
+body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > div > div.col-md-4 > div > section > div > ol{
+	margin-left:8em!important;
+	color:black;
+}
+
+.flex-control-paging li a {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: none;
+    cursor: pointer;
+		text-indent: -9999px;
+		background-color: lightgray!important;
+    border:2px solid lightgray!important;
+	  border-radius:20px;
+}
+
+.flex-control-paging li a.flex-active { 
+	background: rgb(255, 174, 0)!important;
+    cursor: default;
+    border: 2px solid lightgray!important;
+}
+
+
+</style>
+
 </head>
 
 
@@ -107,7 +133,7 @@ p.title{
 			<a href="index.html" style="color: black;" class="NamumGFont">Home</a> 
 			<span>|</span>
 		</li>
-		<li class="NamumGFont">자주 묻는 질문들 (FAQ) </li>
+		<li class="NamumGFont"> 게시글 작성</li>
 	</ul>
 </div>
 </div>
@@ -168,6 +194,8 @@ p.title{
 
 						</div>
 					</li>
+					
+
 				<li style="background-color: rgba(255, 230, 118, 0.664)!important; height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >My Place</span></a></li>
 				<li ><a href="myPage.html">마이 페이지</a></li>
 			
@@ -199,48 +227,102 @@ p.title{
 		</nav>
 
 	</div>
-	<!-- login -->
-	<div class="w3l_banner_nav_right">
-	<div class="w3_login justify-content-center">
-				<div class="card_boardList " style="height: 800px;">
-				
-					<div class="accordion-box">
-						<ul class="list">
-							<li>
-							 <p class="title  NamumGFont-bg">
-									<span class="glyphicon glyphicon-question-sign"></span>
-									증명서류가 뭔가요?
-							</p>
-							 <div class="con NamumGFont-bg">
-									먼저 회원가입 시 학교 재학생인지, 학교 재학생임과 더불어 기숙사생인지 구분하여<br>
-									각 구분에 맞는 증명서류를 첨부합니다.<br>
-									재학생의 경우 재학증명서나 학생증, 기숙사생은 재학생 증명서류와 함께 
-									기숙사비용을 낸 확인증이나, 기숙사 출입카드 등을 증명해야합니다.<br>
-									그 후 관리자가 확인하여 가입 승인 시, 해당 회원 분류로 로그인 하실 수 있습니다.<br>
-							 </div>
-						 </li>
-						 <li>
-							 <p class="title">accodion-2</p>
-							 <div class="con">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-						 </li>
-						 <li>
-							 <p class="title">accodion-3</p>
-							 <div class="con">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-							</li>
-						 </ul>
-				 </div>
-					
-				</div>
-			</div>
+	<!-- 게시글 카드 -->
+	<div class="w3l_banner_nav_right" style="margin-top: 0em!important;">
+	<div class="w3_login justify-content-center" >
+		
+		<form method="POST">
+				<div class="card_saleDetail ">
 
-	<script>
-		$("p.title").on('click',function(){
-  $(this).next(".con").slideToggle(100);
-});
-	</script>
-	
-<!-- //login -->
-	</div>
+					<!-- 카드 헤더-->
+						<div class="row-md-12 " style="margin-left:1em;">
+								<div class="col-sm-1 ">
+									<select style="width:110%" class="form-control">
+										<option value="">학교</option>
+										<option value="">기숙사</option>
+									</select>
+								</div>
+							
+								<div class="col-sm-11 NamumGFont" style="width: 89.2%;">
+										<input type="text" class="form-control" placeholder="제목 입력">
+								</div>
+								<br /> <hr>
+								
+							</div>
+
+							<!-- 내용 -->
+								<div  class="card-content" >
+
+								<div class="row-md-12" style="margin-top: 1.5em; margin-right: 5em;">
+
+									<!-- 사진 영역 시작-->
+
+										<div class="col-md-4" >
+											<div class="w3l_banner_nav_right" >
+
+
+												<div id="dropZone"
+												style="width: 350px; height: 420px; border: solid 1px; border-color: lightgray; display: inline-block!important;">
+											 <div id="fileDragDesc" class="NamumGFont" 
+											 	style="display: inline-block!important; padding-top:170px!important;"> 파일 드래그 </div>
+									 
+											 
+											 <table id="fileListTable" width="100%"  style="display: inline-block!important;">
+													 <tbody id="fileTableTbody" class="NamumGFont">
+					 
+													 </tbody>
+											 </table>
+									 </div>
+
+
+												<div class="upload-btn-wrapper" style="display: inline-block!important;">
+													<input type="file" id="input_file" multiple="multiple" style="height: 100%; display: inline-block!important;" />
+													<small style="display: inline-block; color: red;" class="NamumGFont">등록할 사진을 첨부해주세요</small>
+													<button class="upload-btn NamumGFont" style="width:23em;" >파일선택</button>
+											</div>
+											
+											<br>
+				
+										
+										</div>		
+										</div> <!-- 사진 영역 끝-->
+
+
+										<!-- 상세 -->
+										<div class="col-md-8" style="margin-top: 4em; "> 
+												
+												
+												<div class="" style="height: 500px;  overflow: auto; ">
+													
+													<textarea style="resize: none;height: 100%; width: 100%; border:1px solid lightgray; "placeholder="게시글 내용 입력" class="NamumGFont-bg"></textarea>
+															
+														
+												</div>
+
+												<br>
+										</div>
+										<!--상세 끝-->
+								</div>								
+							</div> <!-- 내용 끝 -->
+
+
+							<br /> <hr>
+							<div class="row-12">
+								<div class="col-md-7" style="margin-right: 6.5em;"></div>
+								<div class="col-md-2">
+									<a href="" class="btn btn-block badge-danger NamumGFont" style="color: white;">수정취소</a>
+								</div>
+								<div class="col-md-2">
+									<a href="" class="btn btn-block badge-success NamumGFont" style="color: white;">수정하기</a>
+								</div>
+								</div>
+							</form>
+				</div>
+				
+			</div>
+			
+		</div>
+
 	<div class="clearfix"></div>
 </div>
 <!-- //banner -->
@@ -267,63 +349,24 @@ p.title{
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script>
-  
-    
-    /* QA 목록 출력 함수 */
-    
-   /* $(document).ready(function(){
-	   
-	   var $qaListArea = $("#qaListArea");
-	   
-	   <% for (QA qa : qaList) { %>
-	   
-	   var $container = $("<div>").prop("class", "container");
-	   var $questionRow = $('<div class="row card">');
-	   var $questionCol = $('<div class="col-md-12 card-body p-2 clickShow" style="cursor: pointer;">');
-	   var $question = $('<p class="mb-0 NamumGFont">').html("<strong class="NamumGFont">Q. &nbsp;&nbsp;" + "<%= qa.getQaTitle()%></strong>");
-	   var $answerRow = $('<div class="row">');
-	   var $answerCol = $('<div class="col-md-12 bg-white" id="bb" style="display: none;">');
-	   var $answer = $('<p class="mb-0">').html("<%= qa.getQaContent()%>");
-	   
-	   $container.append($questionRow.append($questionCol.append($question)));
-	   $container.append($answerRow.append($answerCol.append($answer)));
-	   $qaListArea.append($container);
-	   
-	   <% } %>
-	   
-	   
-	   $(".clickShow").click(function(){
-			
-			console.log("click 실행")
-			
-		    if($(this).parent().next("div").children().css("display") == "none"){
-		        $(this).parent().next("div").children().slideDown();
-		    } else {
-		        $(this).parent().next("div").children().slideUp();
-		    }
+
+
+	<!-- flexSlider -->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+	$(window).load(function(){
+		$('.flexslider').flexslider({
+		animation: "slide",
+		start: function(slider){
+			$('body').removeClass('loading');
+		}
 		});
-	   
-	   
-    	
-		});
+	});
+	</script>
+<!-- //flexSlider -->
 
-    
 
-$(document).ready(function(){
-    $(".dropdown").hover(            
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-            $(this).toggleClass('open');        
-        },
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-            $(this).toggleClass('open');       
-        }
-    );
-}); 		*/
-
-</script>
 
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">

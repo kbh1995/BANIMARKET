@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title> 바니마켓 - 공지사항 상세보기</title>
+<title> 바니마켓 - 게시글 상세보기</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -35,7 +35,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
-
+<link rel=”stylesheet” href=”http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css“>
 
 <style>
 #bs-megadropdown-tabs > ul > li{
@@ -50,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 .w3l_banner_nav_right_banner{
-	background:url(images/detailEx1.jpg) no-repeat 0px 0px;
+	background:url(images/boardDetailEx1.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -58,7 +58,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	-ms-background-size:cover;
 }
 .w3l_banner_nav_right_banner1{
-	background:url(images/detailEx2.jpg) no-repeat 0px 0px;
+	background:url(images/boardDetailEx2.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -133,7 +133,7 @@ body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > di
 			<a href="index.html" style="color: black;" class="NamumGFont">Home</a> 
 			<span>|</span>
 		</li>
-		<li class="NamumGFont"> 공지사항 상세보기</li>
+		<li class="NamumGFont"> 게시글 상세보기</li>
 	</ul>
 </div>
 </div>
@@ -232,59 +232,210 @@ body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > di
 	<div class="w3_login justify-content-center" >
 		
 
-				<div class="card_saleDetail ">
+				<div class="card_saleDetail " style="height: auto;">
 
 					<!-- 카드 헤더-->
-						<div class="row-md-12 " style="margin-left:1em; margin-top:1em;">
-							<div class="col-md-10" style="padding-top:1em;">
-								<h4 class="NamumGFont">테스트공지사항</h4>
-										</div>
-										<div class="col-md-2"  style="padding-top:1em;">
-												<small>작성일자</small>
-												<span>2020.09.24</span>
-										</div>
-						</div>
+<div class="row-md-12 " style="margin-left:1em; margin-top:1em;">
+	<div class="col-md-6" style="padding-top:1em;">
+		<h4 class="NamumGFont">오늘 드림폴리카페 근처에서 지갑 분실하신 분?</h4>
+				</div>
+				<div class="col-md-4"  style="padding-top:1em;">
+					<small class="NamumGFont">작성자</small>
+					<span class="NamumGFont">테스트유저</span>
+					<a href="otherProfile.html" class="NamumGFont btn btn-success" style="color:white" >&nbsp;&nbsp;<span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;놀러가기</a>
+					<span class="btn btn-info NamumGFont" data-toggle="modal" data-target="#sendMsg" style="color:white"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;쪽지보내기</span>
+
+			</div>
+				<div class="col-md-2 "  style="padding-top:1em;">
+						<small class="NamumGFont">작성일자</small>
+						<span class="NamumGFont">2020.09.24</span>
+				</div>
+		</div>
 							<br>
 								
-							
+							<!--발신 쪽지 모달 -->
+							<div class="modal fade" id="sendMsg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog " role="document" style="padding-left: 200px; padding-right: 200px; padding-top:600px;padding-bottom:300px;">
+									<div class="modal-content modal-lg">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">쪽지 발송</h5>
+										</div>
+										<div class="modal-body">
+												
+												<form method="POST">
+
+													<input type="hidden" value="" placeholder="쪽지 번호 " id="">
+														
+														<span> 테스트유저 </span> <small>님 께 쪽지를 발송합니다 </small>
+													
+ 
+														<br><br>
+														<small style="line-height: -4em;">내용</small>
+														<textarea class="NamumGFont"  style="height: 8em; width: 750px; margin-left: 14px;">헉 ㅠㅠㅠㅠㅠ 제거에요ㅠㅠㅠㅠ 제가 오늘 카페갔다오면서 잃어버렸어요 ㅠㅠ</textarea>
+									
+
+										<br><br>
+										
+										<div class="modal-footer" style="margin-right: 1em;">
+											<button type="reset" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>&nbsp;답장 취소</button>
+											<span class="btn btn-success"  data-toggle="modal" data-target="#sendMsg"><span class="glyphicon glyphicon-pencil"></span>&nbsp;답장하기</span>
+										</div>
+									</form>
+									</div>
+									</div>
+								</div>
+						
+						</div> <!-- 발신 쪽지 모달 끝 -->
+
 
 							<!-- 내용 -->
 								<div  class="card-content" >
 
-									<!-- 상세 -->
-										<div class="col-md-12" style="margin-top: 1em; "> 
-												
-												
-												<div class="" style="height:600px;  overflow: auto; ">
-													
-													<p>테스트 공지사항입니다.<br>
-													바니마켓 이용 시 어쩌구 저쩌구</p>
-														
-												</div>
+											<!-- 상세 -->
+			<div class="col-md-12" style="margin-top: 1em; "> 
+				<!-- 사진 영역 시작-->
 
-												<br>
-
-	
-
-
-
-										</div>
-										<!--상세 끝-->
+		<div class="col-md-4" >
+			<div class="w3l_banner_nav_right" >
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="w3l_banner_nav_right_banner">
+								
+							</div>
+						</li>
+						<li>
+							<div class="w3l_banner_nav_right_banner1">
 							
-							
-
-						
+							</div>
+						</li>
+						<li>
+							<div class="w3l_banner_nav_right_banner2">
 
 							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>		
+					
+		</div> <!-- 사진 영역 끝-->
+				
+				<div class="col-md-8" style="height:600px;  overflow: auto; margin-top:4em; ">
+					
+					<p class="NamumGFont-bg">
+							오늘 나래관 1층 드림폴리카페 앞에서 주웠는데<br>
+							이미 카페는 문 닫아가지고 일단 가지고 왔어요<br>
+							<br>
+
+							안에 신분증도 없고.. 카드에도 이름 없는 것 같아서 누구건진 모르겠구요<br>
+
+							잃어버리신 분 주말이니까 담주 월요일에 4층 웹디자인실 오시거나<br>
+							아님 일단 쪽지주세여<br><br>
+							기숙사생이시면 제 방으로 오셔도 돼여
+
+					</p>
+						
+				</div>
+				</div> <!-- 상세페이지 끝-->
+							</div> <!-- 내용 끝 -->
 							<br /> <hr>
+
+
+
+
+<!-- 댓글 영역 시작 -->
+<div class="row-md-12" style="margin-top:2em; margin-bottom:2em; height: auto;">
+
+
+	<div class=" " style="height: auto;">
+	
+		<!-- 댓글 하나-->
+			<div class="row-md-12 reply_display">
+						<div class="row-md-12" style="margin-left:5em;">
+							<div class="col-md-1"> <!--프로필사진-->
+								<div class="profile_logo_container " >
+										<img src="images/userProfileEx.jpg" class="profile_logo" alt="Logo" >			
+								</div>
+							</div> <!--프로필사진 끝-->
+							
+							<div class="col-md-2" style=" padding-top:1.1em;"> <!--닉네임-->
+								&nbsp;
+								<small class="badge badge-pill badge-info NamumGFont"  style="font-size: 15px;" >바니바니당근당근</small>
+								<br><br>
+							</div> <!--닉네임 끝-->
+				
+					
+					<div class="col-md-7" >
+							<span class="NamumGFont " style="line-height: 65px;">
+									헐 저요!!! ㅠㅠㅠㅠ  제거에요ㅠㅠㅠㅠㅠ 쪽지드릴게요!!!
+								</span>
+					</div>
+
+					<div class="col-md-2" style="display: inline-block;">
+						<button class="btn btn-sm btn-danger" style="margin-left:20px; margin-top:20px;">삭제</button>
+						<button class="btn btn-sm btn-info" style="margin-left:10px; margin-top:20px;">수정</button>
+						<button class="btn btn-sm btn-success" style="margin-left:10px; margin-top:20px;">답글</button>
+					</div>
+			</div> 
+</div> <!-- 댓글 하나 끝-->
+
+<div class="row-md-12">
+<!-- 답댓글 하나-->
+<div class="col-md-1 " style="padding-left:8em; padding-top:4em;">
+	<span class="glyphicon glyphicon-arrow-right" style="font-size: 20px;"></span>
+</div>
+<div class="col-md-11 replyAnswer_display">
+	<div class="row-md-12" style="margin-left:5em;">
+		
+		<div class="col-md-1"> <!--프로필사진-->
+			<div class="profile_logo_container " >
+				<img src="images/userBasicProfile.jpg" class="profile_logo" alt="Logo" >		
+			</div>
+		</div> <!--프로필사진 끝-->
+		
+		<div class="col-md-2"  style=" padding-top:1.1em;"> <!--닉네임-->
+			&nbsp;
+			<small class="badge badge-pill badge-info NamumGFont"  style="font-size: 15px; " >테스트유저</small>
+			<br><br>
+		</div> <!--닉네임 끝-->
+
+
+<div class="col-md-7" >
+		<span class="NamumGFont " style="line-height: 65px;">
+				 넵넵 
+			</span>
+</div>
+
+<div class="col-md-2" style="display: inline-block;">
+		<button class="btn btn-sm btn-success" style="margin-left:140px; margin-top:20px;">답글</button>
+</div>
+</div> 
+</div> <!-- 답댓글 하나 끝-->
+</div>
+
+
+
+
+
+
+	<div class="col-md-1"></div>
+
+</div> <!-- 댓글 영역 끝 -->
+
+</div>
+
+
 							<div class="row-12">
 								<div class="col-md-5" style="margin-right: 6.5em;"></div>
-								<!-- 관리자 로그인시에만 삭제 / 수정 표출-->
-								<div class="col-md-2">
+								<!-- 작성유저 로그인시 + 관리자 로그인시에만 삭제 / 수정 표출-->
+								<!--<div class="col-md-2">
 									<a href="#" class="btn btn-block btn-danger"><span class="glyphicon glyphicon-trash"></span> 삭제하기 </a>
 								</div>
 											<div class="col-md-2">
-												<a href="noticeUpdate.html" class="btn btn-block btn-info"><span class="glyphicon glyphicon-trash"></span> 수정하기 </a>											</div>
+												<a href="boardUpdate.html" class="btn btn-block btn-info"><span class="glyphicon glyphicon-trash"></span> 수정하기 </a>	</div> -->
+								<div class="col-md-4" style="margin-right: 1em;"></div>
 								<div class="col-md-2">
 									<button type="submit" class="btn btn-block badge-success NamumGFont" style="color: white;">목록으로</button>
 								</div>

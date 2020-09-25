@@ -202,7 +202,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 		
 							<div class="col-md-1">
-								<a href="write.html" class="btn btn-block badge-info NamumGFont" style="margin-left:5.3em; color: white; text-decoration: none;">
+								<a href="boardWrite.html" class="btn btn-block badge-info NamumGFont" style="margin-left:5.3em; color: white; text-decoration: none;">
 									<span class="glyphicon glyphicon-pencil" style="color: white;"></span> &nbsp; 글쓰기</a>
 							</div>
 						
@@ -396,6 +396,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/bootstrap.min.js"></script>
 <script>
   
+	jQuery(document).ready(function($) {
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+});
     
     /* QA 목록 출력 함수 */
     

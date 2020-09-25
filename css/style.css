@@ -35,6 +35,25 @@ body > div.banner > div.w3l_banner_nav_right.justify-content-center > div > div 
 	margin-left: 20em;
 }
 
+.card_reply{
+	height: auto;
+	width:1600px; 
+	margin-left: 25px; 
+	margin-top: 0em;
+	margin-bottom: auto;	
+	overflow: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+
+}
+
 .card_boardList{
 	height: 900px;
 	width: 1700px;
@@ -176,6 +195,44 @@ body > div.banner > div.w3l_banner_nav_right.justify-content-center > div > div 
 }
 
 
+.reply_display{
+	height: 100px;
+	width: 90%;
+	margin-left:4em;
+	margin-top:20px;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+.replyAnswer_display{
+	height: 100px;
+	width: 85%;
+	margin-left:4em;
+	margin-top:20px;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+
+
 /*로그인 관련*/
 .user_card_login{
 	height: 450px;
@@ -194,6 +251,48 @@ body > div.banner > div.w3l_banner_nav_right.justify-content-center > div > div 
 	border-radius: 5px;
 
 }
+
+.replyAnswer_display_profile_logo_container {
+	position: absolute;
+	height: 85px;
+	width: 75px;
+	top: -15px;
+	margin-top:5px;
+	border-radius: 50%;
+	background: rgba(255, 166, 0, 0.678);
+	padding-top:8px;
+	text-align: center;
+
+}
+
+.replyAnswer_display_profile_logo{
+	height:70px;
+	width:60px;
+
+	border-radius: 50%;
+}
+
+
+.profile_logo_container {
+	position: absolute;
+	height: 85px;
+	width: 75px;
+	top: -15px;
+	margin-top:5px;
+	border-radius: 50%;
+	background: rgba(255, 166, 0, 0.678);
+	padding-top:8px;
+	text-align: center;
+}
+
+
+.profile_logo {
+	height:70px;
+	width:60px;
+
+	border-radius: 50%;
+}
+
 .brand_logo_container {
 	position: absolute;
 	height: 170px;
@@ -204,12 +303,17 @@ body > div.banner > div.w3l_banner_nav_right.justify-content-center > div > div 
 	padding: 10px;
 	text-align: center;
 }
+
+
 .brand_logo {
 	height: 150px;
 	width: 150px;
 	border-radius: 50%;
 	border: 2px solid white;
 }
+
+
+
 .form_container {
 	margin-top: 100px;
 }
@@ -545,6 +649,9 @@ ul.dropdown-menu.drp-mnu li a i {
 	-o-background-size:cover;
 	-ms-background-size:cover;
 }
+
+
+
 .w3l_banner_nav_right_banner1{
 	background:url(../images/everytime.jpg) no-repeat 0px 0px;
 	background-size:cover;
