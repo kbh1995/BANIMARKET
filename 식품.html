@@ -98,14 +98,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 				<ul class="nav navbar-nav ">
 				
-					<li style="background-color:white!important; height:5em!important; ">
+					<li style="background-color:white!important; height:10em!important; ">
 						<div class="row-md-12" >
-								
-							<div class="col-md-4"></div>
-							<div class="col-md-8 "  style="margin-top: 1.25em; line-height:25px;">
+							<div class=" "  style=" margin-bottom:0.5em; line-height:25px; text-align: center;" >
+								<br>
+								<span class="NamumGFont"> 환영합니다
+									<strong style="font-weight: bold; color: red;"> ღ</strong>
+									<strong style="font-weight: bold; ">'ᴗ'</strong>
+									<strong style="font-weight: bold; color: red;"> ღ</strong>
+								</span>
+								<br>
 								<span class="badge badge-pill badge-info NamumGFont"  style="font-size: 15px; line-height: 22.5px;" >바니바니당근당근</span>
-								<span class="NamumGFont">님 환영합니다.</span>
+								<small class="NamumGFont">님</small>
 							</div>
+
+							<div class="row-md-12">
+							<div class="col-md-8" >
+								<!-- 또 둘로 나눠서 쪽지랑 채팅 구분 -->
+								<div class="row-md-12">
+										<div class="col-md-6">
+											<a href="msgList.html" class="btn  NamumGFont" style="color: white; width: 100%; background-color: rgb(143, 145, 146);">
+												<span class="glyphicon glyphicon-envelope"></span>&nbsp;쪽지함
+											</a>
+										</div>
+										<div class="col-md-6">
+											<a href="chatList.html" class="btn  NamumGFont" style="color: white; width: 100%; background-color: rgb(143, 145, 146);">
+												<span class="glyphicon glyphicon-comment"></span>&nbsp;채팅목록
+											</a>
+										</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<a href="logout.html" class="btn  NamumGFont" style="color: white; width: 100%; background-color: rgb(143, 145, 146);">
+									<span class="glyphicon glyphicon-remove"></span>&nbsp;로그아웃
+								</a>
+							</div>
+						</div>
+
 						</div>
 					</li>
 					
@@ -474,7 +503,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a class="page-link" href="#"> 마지막 &nbsp; <span class="glyphicon glyphicon-forward"></span></a>
 						  </li>
 						</ul>
-					  </nav>
+						</nav>
+						
+<!-- 검색창-->
+												 
+					 
+<form class="NamumGFont" method="POST" action="" style="padding-left:20em; margin-top:0em!important; padding-top:0em!important">
+	<div class="row-md-12 " >
+		<div class="col-md-1">
+			
+			<select name="searchKey" class="custom-select " id="inlineFormCustomSelect" style="width: 7em; height: 2.1em; ">
+				<option value="title" selected>제목</option>
+				<option value="content">내용</option>
+				<option value="memberId">작성자</option>
+			</select>
+		</div>
+
+		<div class="col-md-8">
+			<input name="searchValue" type="text" class=" form-control " placeholder="검색어를 입력하세요." style="margin-left:1em; margin-bottom:2em;">
+		</div>
+		<div class="col-md-2">
+			<button type="submit" class="btn btn-block badge-info" style="color: white;">검색</button>
+		</div>
+	 </div>
+	</form>
+
+
 				</div>
 			</div>
 		</div>

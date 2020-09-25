@@ -307,14 +307,34 @@ body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > di
 												<div class="col-md-2 justify-content-center"  style="height: 2em;" > 
 													
 														<span id="loveit" class=" glyphicon glyphicon-heart  " style="font-size: 40px; line-height: 10px; color: gray;"></span>
+														<span>(1)</span>
 							
 												</div>
 											</div>
 
-											<script>
+
+								<script>
+
+									/**
+											* 중복서브밋 방지
+											* 
+											* @returns {Boolean}
+											*/
+											var doubleSubmitFlag = false;
+											function doubleSubmitCheck(){
+													if(doubleSubmitFlag){
+															return doubleSubmitFlag;
+													}else{
+															doubleSubmitFlag = true;
+															return false;
+													}
+											}
+
 												/* 	loveit 클릭 시	*/
 
 												$("#loveit ").click( function() { 
+
+													if(doubleSubmitCheck()) return;
 													
 													if (confirm("해당 상품을 찜하시겠습니까?") == true){    //확인
 
@@ -324,27 +344,15 @@ body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > di
 													    마이페이지 내 찜 목록에서 뿌리기 
 															찜 목록 삭제는 내 찜 목록에서 가능*/
 
+														$(this).css('color','red');
+														alert("찜이 완료되었습니다. \n찜 목록 확인 및 삭제는 마이페이지의 내 찜 목록에서 가능합니다. ");
 
+																													
 														} else{   //취소
 
 																return false;
-
 														}
-
-																							
-							
-													/*Ajax*/
-
-													/* user_loveit 컬럼에 글 주소 삽입 
-													    마이페이지 내 찜 목록에서 뿌리기 
-															찜 목록 삭제는 내 찜 목록에서 가능*/
-
-															
-
               					 });
-
-												 
-
 											</script>
 										
 
