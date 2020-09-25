@@ -49,6 +49,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		font-size: 1.1em;
 	}
 
+.recievedChat{
+	margin-top:2em;
+}
+
+	.recievedChat div{
+		font-family: 'Nanum Gothic', sans-serif!important;
+		left:2%;
+		background-color: white;
+		height:auto;
+		width:400px;
+		padding:10px;
+		margin: 1em;
+	}
+
+.sentChat{
+	margin-top: 2em;
+	padding-left:65%;
+}
+
+.sentChat div{
+	font-family: 'Nanum Gothic', sans-serif!important;
+		background-color: white;
+		height:auto;
+		width:400px;
+		padding:10px;
+		margin: 1em;
+}
+
 </style>
 
 
@@ -115,7 +143,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<strong style="font-weight: bold; color: red;"> ღ</strong>
 								</span>
 								<br>
-								<span class="badge badge-pill badge-info NamumGFont"  style="font-size: 15px; line-height: 22.5px;" >바니바니당근당근</span>
+								<span class="badge badge-pill badge-info NamumGFont"  style="font-size: 15px; line-height: 22.5px;" >테스트유저</span>
 								<small class="NamumGFont">님</small>
 							</div>
 
@@ -179,13 +207,183 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	</div>
 	<!-- login -->
-	<div class="w3l_banner_nav_right">
-	<div class="w3_login justify-content-center">
-				<div class="card_faq ">
-
-					<div id="qaListArea">
+	<div class="w3l_banner_nav_right"  style=" height:800px!important;   overflow:none!important; ">
+	
+		<div class="w3_login justify-content-center" style=" height:600px!important;   overflow:none!important; ">
+			
+			<div class="card_chatList"  style=" height:700px!important;"> 
 				
-					</div>
+				<div style="height: 800px;">
+					<div class="row-md-12 "  style=" height:600px!important;  overflow:none!important; ">
+
+					<!--채팅 화면 -->
+					<div>
+						<div id="chatDetail" class="col-md-9 " style="background-color: cadetblue; height: 600px; overflow:auto;">
+
+							<div style="text-align: center; border:0.5px solid lightgray;height: 2.1em; margin:1em; padding-bottom: 4em;" >
+								<br> <span class="glyphicon glyphicon-alert" style="color:white"></span>
+								&nbsp;&nbsp;
+								<small class="NamumGFont" style="color:white; ">신고 누적 시 강퇴 처리 됩니다. 매너있는 바니마켓 이용자가 됩시다. </small>
+								<hr style="margin-top: 2em;  ">
+							</div>
+
+							<div style="margin-bottom: 2em;">
+									<!-- 수신 채팅-->
+									<div  class="recievedChat" >
+											<div>언제 거래 가능하신가요</div>
+											<div>내일 저 6시까지 풀수업인데</div>
+											<div>석식 먹고 기숙사 입구에서 6시 30분 가능하세요?</div>
+											<div>안 되시면 아예 저녁에 채팅 주시고 825호로 오셔도 돼여</div>
+									</div>
+
+
+			
+
+								<div class="sentChat">
+									<!-- 발신 채팅-->
+									<div>토요일까지 </div>
+									<div>혹시 홀딩 가능하신가요?ㅠ</div>
+									<div>금요일 밤에 기숙사 갈 것 같은데 </div>
+									<div>지금은 본가구요 </div>
+									<div>금요일에 밤 늦게 갈거라... 도착하고 가기엔 너무 늦어서 민폐일것같아요 </div>
+								</div>
+
+							</div>
+						</div>
+						
+						</div> <!--채팅 화면  끝-->
+						
+						<div class="col-md-3 bg-warning" style=" height: 600px; ">
+
+							<div class="brand_logo_container " style="margin-top: 6.5em; margin-left: 6.5em; ">
+									<a  href="index.html"><img src="images/userProfileEx.jpg" class="brand_logo" alt="Logo"></a>
+							</div>
+
+							<div class="" style="margin-top: 13em; text-align: center; height: 600px; ">
+								
+								<span class="badge badge-pill badge-info NamumGFont-bg"  >바니바니당근당근</span>
+								
+								<br><br>
+
+								<span class="NamumGFont">기숙사생</span>
+								<i class="NamumGFont">&nbsp;&nbsp; | &nbsp;&nbsp;</i>
+								<a href="otherProfile.html" class="NamumGFont" style="color:black" >&nbsp;&nbsp;<span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;놀러가기</a>
+								<small class="NamumGFont">  </small>
+
+								<hr>
+								<span class="NamumGFont">평점</span>
+								&nbsp;
+								<span class="badge badge-pill badge-info NamumGFont-bg " >★★★★★ <small> ( 10.0점 )</small></span>
+
+								<br><br>
+
+								<span class="NamumGFont">최근 후기</span> <!-- 후기 작성일 기준 3개 표출-->
+								<br>
+								<span class="badge badge-pill badge-self NamumGFont-bg" style="width: 15em; margin-bottom: 10px;" >
+									시간 잘 맞춰서 좋았어요
+								</span>
+								
+								<span class="badge badge-pill badge-self NamumGFont-bg" style="width: 15em; margin-bottom: 10px;" >
+									설명을 친절하게 해줬음
+								</span>
+
+								<span class="badge badge-pill badge-self NamumGFont-bg" style="width: 15em; margin-bottom: 10px;" >
+									ㄱㅊㄱㅊ 매너있음
+								</span>
+
+							</div>
+							</div>
+						</div>
+
+
+					</div> <!-- 프로필 끝 -->
+
+						<!--채팅 보내기 시작 -->
+						<div class="row-md-12">
+							<div class="col-md-9" style="background-color:teal; height:70px;  margin-top:10px;margin-bottom:10px;">
+
+								<form method="post">
+								<div class="row-md-12">
+									<div class="col-md-11" >
+											<textarea class="NamumGFont" placeholder="이곳에 채팅을 입력하세요" style="width: 100%; background-color: white;  resize: none; margin-top:10px; "></textarea>
+									</div>
+									<div class="col-md-1">
+											<button id="sendMsgButton" class="btn btn-block btn-light"  style="margin-top:10px; height:50px;">전송</button>									
+										</div>
+								</div>
+							</form>
+
+							</div>
+
+
+							<div class="col-md-3 bg-warning" style="height: 80px;">
+								<a href="" class="btn badge-danger  btn-block" data-toggle="modal" data-target="#reportUser"  style="color: white; height:70px; "><br>신고하기</a>
+
+								<div class="modal fade" id="reportUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog " role="document" style="padding-left: 200px; padding-right: 200px; padding-top:300px;padding-bottom:300px;">
+										<div class="modal-content modal-lg">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">해당 유저 신고하기</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+													
+													<form method="POST">
+
+														<input type="hidden" value="" placeholder="글 번호 ! " id="">
+															
+															<small>신고분류</small>
+															&nbsp;&nbsp;
+															<select>
+																	<option value="">신고분류 선택</option>
+																	<option value="">욕설 / 비방</option>
+																	<option value="">허위상품 게시</option>
+																	<option value="">쓸 수 없는 상품</option>
+																	<option value="">공지위반</option>
+																	<option value="">기타</option>
+															</select>
+
+															<br><br>
+															<small style="line-height: -4em;">신고사유</small>
+															<textarea class="NamumGFont"  style="height: 8em; width: 750px; margin-left: 14px;">기타 선택 사유 또는 추가 설명 작성</textarea>
+										
+
+											<br><br>
+
+											<div class="modal-footer" style="margin-right: 1em;">
+												<button type="reset" class="btn btn-info" data-dismiss="modal">신고 취소</button>
+												<button type="submit" class="btn btn-danger">신고하기</button>
+											</div>
+										</form>
+										</div>
+										</div>
+									</div>
+							
+							</div> <!-- 신고 모달 끝 -->
+
+							</div>
+						</div> <!-- 채팅 보내기 끝 -->
+					
+						
+
+
+						<script>
+							/* 채팅 스크롤 맨 하단으로 고정 */
+							$("#chatDetail").scrollTop($("#chatDetail")[0].scrollHeight);
+
+
+							$("#sendMsgButton").click(function() {
+
+							});
+
+						</script>
+
+
+
+	<!--프로필 시작-->
+										
 					
 				</div>
 			</div>

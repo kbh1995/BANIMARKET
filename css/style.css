@@ -40,7 +40,6 @@ body > div.banner > div.w3l_banner_nav_right.justify-content-center > div > div 
 	width: 1700px;
 	margin-top: 0em;
 	margin-bottom: auto;	
-	background-color: #ffffff;
 	overflow: auto;
 	position: relative;
 	display: flex;
@@ -52,6 +51,25 @@ body > div.banner > div.w3l_banner_nav_right.justify-content-center > div > div 
 	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
 }
+
+.card_chatList{
+	height: 900px;
+	width: 1700px;
+	margin-top: 0em;
+	margin-bottom: auto;	
+	background-color: #ffffff;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+
 
 .card_saleDetail{
 	height: 900px;

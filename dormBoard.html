@@ -58,6 +58,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	text-align: center;
 	color: black;
 }
+
+#table-hover tr:hover td, #table-hover tr:hover td {
+  background-color: lemonchiffon;
+}
 </style>
 
 
@@ -113,19 +117,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 				<ul class="nav navbar-nav ">
-				
-					<li style="background-color:white!important; height:5em!important; ">
+					<li style="background-color:white!important; height:10em!important; ">
 						<div class="row-md-12" >
-								
-							<div class="col-md-4"></div>
-							<div class="col-md-8 "  style="margin-top: 1.25em; line-height:25px;">
+							<div class=" "  style=" margin-bottom:0.5em; line-height:25px; text-align: center;" >
+								<br>
+								<span class="NamumGFont"> 환영합니다
+									<strong style="font-weight: bold; color: red;"> ღ</strong>
+									<strong style="font-weight: bold; ">'ᴗ'</strong>
+									<strong style="font-weight: bold; color: red;"> ღ</strong>
+								</span>
+								<br>
 								<span class="badge badge-pill badge-info NamumGFont"  style="font-size: 15px; line-height: 22.5px;" >바니바니당근당근</span>
-								<span class="NamumGFont">님 환영합니다.</span>
+								<small class="NamumGFont">님</small>
+							</div>
+
+							<div class="row-md-12">
+							<div class="col-md-8" >
+								<!-- 또 둘로 나눠서 쪽지랑 채팅 구분 -->
+								<div class="row-md-12">
+										<div class="col-md-6">
+											<a href="msgList.html" class="btn  NamumGFont" style="color: white; width: 100%; background-color: rgb(143, 145, 146);">
+												<span class="glyphicon glyphicon-envelope"></span>&nbsp;쪽지함
+											</a>
+										</div>
+										<div class="col-md-6">
+											<a href="chatList.html" class="btn  NamumGFont" style="color: white; width: 100%; background-color: rgb(143, 145, 146);">
+												<span class="glyphicon glyphicon-comment"></span>&nbsp;채팅목록
+											</a>
+										</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<a href="logout.html" class="btn  NamumGFont" style="color: white; width: 100%; background-color: rgb(143, 145, 146);">
+									<span class="glyphicon glyphicon-remove"></span>&nbsp;로그아웃
+								</a>
 							</div>
 						</div>
+
+						</div>
 					</li>
-					
-					
 
 				<li style="background-color: rgba(255, 230, 118, 0.664)!important; height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >My Place</span></a></li>
 				<li ><a href="myPage.html">마이 페이지</a></li>
@@ -197,8 +227,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											 </tr>
 										 </thead>
 										 
-										 <tbody style="background-color: rgb(255, 255, 255);" >
-												 <tr>
+										 <tbody id="table-hover"style="background-color: rgb(255, 255, 255);" >
+												 <tr class='clickable-row' data-href='boardDetail.html'>
 														 <td>10</td>
 														 <td><span class="ContentLength">&nbsp;테스트</span></td>
 														 <td><span class="">바니바니당근당근</span></td>
