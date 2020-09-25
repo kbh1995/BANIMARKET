@@ -59,9 +59,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	color: black;
 }
 
-#table-hover tbody tr:hover td, #table-hover tbody tr:hover td {
+#table-hover tr:hover td, #table-hover tr:hover td {
   background-color: lemonchiffon;
 }
+
+.sentMsg_height tr{
+	height: 61.25px;	
+}
+
+
+
+
 </style>
 
 
@@ -185,17 +193,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</nav>
 	</div>
 	<!-- 게시판 -->
-	<div class="w3l_banner_nav_right">
-		<div class="w3_login justify-content-center" >
+	<div class="w3l_banner_nav_right"  style="overflow: none!important;">
+		<div class="w3_login justify-content-center"  style="overflow: none!important;">
 			
-					<div class="card_boardList "> <!-- 기숙사 게시판 카드 시작 -->
+					<div class="card_boardList"  style=" height:1000px; overflow: none!important;"> <!-- 기숙사 게시판 카드 시작 -->
 
 										
 				
 								
-				<div style="height: 700px;  overflow: none;"> 	<!-- 쪽지함 구역 -->
+				<div style="height:900px;  overflow: none!important;"> 	<!-- 쪽지함 구역 -->
 				
-					<div role="tabpanel">
+					<div role="tabpanel"  style="overflow: none!important;">
 
 						<!-- Nav tabs -->
 						<ul class="nav nav-tabs" role="tablist">
@@ -203,43 +211,181 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">발신쪽지함</a></li>
 						</ul>					
 			
-						<div class="tab-content" > 			<!-- Tab panes -->
-							<div role="tabpanel" class="tab-pane active" id="home" style="height: 700px;  overflow: auto;"> <!-- 수신쪽지함 -->
+						<div class="tab-content" style="overflow: none!important;" > 			<!-- Tab panes -->
+							<div role="tabpanel" class="tab-pane active" id="home"  > <!-- 수신쪽지함 -->
 							
-								<table class="dormBoardTable row-md-10 table NamumGFont " style="height: 60px; margin-left:3em; width: 100em; text-align: center; ">
+								<div style="height: 650px;  overflow: none!important;">
+								<table class="dormBoardTable row-md-10 table NamumGFont " style="height: 60px; margin-left:3em; width: 100em; text-align: center;overflow: none!important; ">
 
-					
 									<thead style="background-color: teal; ">
 										<tr >
-											<th scope="col" > <span class="glyphicon glyphicon-envelope"></span> </th> <!--쪽지번호 hidden-->
-											<th scope="col">&nbsp;&nbsp; 제목</th>
-											<th scope="col">&nbsp;보낸 사람</th>
-											<th scope="col">&nbsp;&nbsp;수신날짜</th>
-											<th scope="col">&nbsp;&nbsp;답장여부</th>
-											<th scope="col">&nbsp;&nbsp;</th>
+											<th class="" scope="col" > <span class="glyphicon glyphicon-envelope"></span> </th> <!--쪽지번호 hidden-->
+											<th class="" scope="col">&nbsp;&nbsp; 내용</th>
+											<th class="" scope="col">&nbsp;보낸 사람</th>
+											<th class="" scope="col">&nbsp;&nbsp;수신날짜</th>
+											<th class="" scope="col">&nbsp;&nbsp;답장여부</th>
+											<th class="" scope="col">&nbsp;&nbsp;</th>
 										</tr>
 									</thead>
 									
 									<tbody  id="table-hover"  >
-											<tr >
+											<tr  data-toggle="modal" data-target="#recievedMsg"  >
 												<td><input type="hidden" value="msgNo"></td>
-												<td>게시글 보고 연락드리는데.. </td>
+												<td>쪽지 이렇게 보내는 거 맞나요? </td>
 												<td>테스트유저</td>
 												<td>2020.09.24</td>
 												<td>	O	</td>
 												<td> <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span> 삭제 </a></td>
 											</tr>
+											<tr  data-toggle="modal" data-target="#recievedMsg"  >
+												<td><input type="hidden" value="msgNo"></td>
+												<td>쪽지 이렇게 보내는 거 맞나요? </td>
+												<td>테스트유저</td>
+												<td>2020.09.24</td>
+												<td>	O	</td>
+												<td> <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span> 삭제 </a></td>
+											</tr>
+											<tr  data-toggle="modal" data-target="#recievedMsg"  >
+												<td><input type="hidden" value="msgNo"></td>
+												<td>쪽지 이렇게 보내는 거 맞나요? </td>
+												<td>테스트유저</td>
+												<td>2020.09.24</td>
+												<td>	O	</td>
+												<td> <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span> 삭제 </a></td>
+											</tr>
+											<tr  data-toggle="modal" data-target="#recievedMsg"  >
+												<td><input type="hidden" value="msgNo"></td>
+												<td>쪽지 이렇게 보내는 거 맞나요? </td>
+												<td>테스트유저</td>
+												<td>2020.09.24</td>
+												<td>	O	</td>
+												<td> <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span> 삭제 </a></td>
+											</tr>
+											<tr  data-toggle="modal" data-target="#recievedMsg"  >
+												<td><input type="hidden" value="msgNo"></td>
+												<td>쪽지 이렇게 보내는 거 맞나요? </td>
+												<td>테스트유저</td>
+												<td>2020.09.24</td>
+												<td>	O	</td>
+												<td> <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span> 삭제 </a></td>
+											</tr>
+											
+											<tr  data-toggle="modal" data-target="#recievedMsg"  >
+												<td><input type="hidden" value="msgNo"></td>
+												<td>쪽지 이렇게 보내는 거 맞나요? </td>
+												<td>테스트유저</td>
+												<td>2020.09.24</td>
+												<td>	O	</td>
+												<td> <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span> 삭제 </a></td>
+											</tr>
+											<tr  data-toggle="modal" data-target="#recievedMsg"  >
+												<td><input type="hidden" value="msgNo"></td>
+												<td>쪽지 이렇게 보내는 거 맞나요? </td>
+												<td>테스트유저</td>
+												<td>2020.09.24</td>
+												<td>	O	</td>
+												<td> <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span> 삭제 </a></td>
+											</tr>
+											<tr  data-toggle="modal" data-target="#recievedMsg"  >
+												<td><input type="hidden" value="msgNo"></td>
+												<td>쪽지 이렇게 보내는 거 맞나요? </td>
+												<td>테스트유저</td>
+												<td>2020.09.24</td>
+												<td>	O	</td>
+												<td> <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span> 삭제 </a></td>
+											</tr>
+											<tr  data-toggle="modal" data-target="#recievedMsg"  >
+												<td><input type="hidden" value="msgNo"></td>
+												<td>쪽지 이렇게 보내는 거 맞나요? </td>
+												<td>테스트유저</td>
+												<td>2020.09.24</td>
+												<td>	O	</td>
+												<td> <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span> 삭제 </a></td>
+											</tr>
+											<tr  data-toggle="modal" data-target="#recievedMsg"  >
+												<td><input type="hidden" value="msgNo"></td>
+												<td>쪽지 이렇게 보내는 거 맞나요? </td>
+												<td>테스트유저</td>
+												<td>2020.09.24</td>
+												<td>	O	</td>
+												<td> <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span> 삭제 </a></td>
+											</tr>
+
 									</tbody>
 								</table>
+							</div>
 
-								<script>
-										/* $("#msgDetail").hover(function( ) {
+								<!-- 수신쪽지 모달-->
+								<div class="modal fade" id="recievedMsg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog " role="document" style="padding-left: 200px; padding-right: 200px; padding-top:300px;padding-bottom:300px;">
+										<div class="modal-content modal-lg">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">쪽지 확인</h5>
+											</div>
+											<div class="modal-body">
+													
+													<form method="POST">
 
-											$(this).css('background-color','lightblue');
+														<input type="hidden" value="" placeholder="쪽지 번호 " id="">
+															
+															<span> 테스트유저 </span> <small>님 께서 쪽지를 보냈습니다 </small>
+														
 
-										}); */
+															<br><br>
+															<small style="line-height: -4em;">내용</small>
+															<textarea class="NamumGFont"  style="height: 8em; width: 750px; margin-left: 14px;">쪽지 이렇게 보내는 거 맞나요? 생각보다 엄청 간단하네요ㅎㅎ</textarea>
+										
 
-								</script>
+											<br><br>
+											
+											<div class="modal-footer" style="margin-right: 1em;">
+												<a href="#" class="btn btn btn-info"><span class="glyphicon glyphicon-home"></span>&nbsp;놀러가기 </a>
+												<button type="reset" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>&nbsp;답장 취소</button>
+												<span class="btn btn-success" data-toggle="modal" data-target="#sendMsg"><span class="glyphicon glyphicon-pencil"></span>&nbsp;답장하기</span>
+											</div>
+										</form>
+										</div>
+										</div>
+									</div>
+							
+							</div> <!-- 수신쪽지 모달 끝 -->
+
+							<!--발신 쪽지 모달 -->
+							<div class="modal fade" id="sendMsg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog " role="document" style="padding-left: 200px; padding-right: 200px; padding-top:600px;padding-bottom:300px;">
+									<div class="modal-content modal-lg">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">쪽지 발송</h5>
+										</div>
+										<div class="modal-body">
+												
+												<form method="POST">
+
+													<input type="hidden" value="" placeholder="쪽지 번호 " id="">
+														
+														<span> 테스트유저 </span> <small>님 께 쪽지를 발송합니다 </small>
+													
+ 
+														<br><br>
+														<small style="line-height: -4em;">내용</small>
+														<textarea class="NamumGFont"  style="height: 8em; width: 750px; margin-left: 14px;">네 맞습니다~~^__^</textarea>
+									
+
+										<br><br>
+										
+										<div class="modal-footer" style="margin-right: 1em;">
+											<button type="reset" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>&nbsp;답장 취소</button>
+											<span class="btn btn-success"  data-toggle="modal" data-target="#sendMsg"><span class="glyphicon glyphicon-pencil"></span>&nbsp;답장하기</span>
+										</div>
+									</form>
+									</div>
+									</div>
+								</div>
+						
+						</div> <!-- 발신 쪽지 모달 끝 -->
+
+						
+
 
 								<nav aria-label="Page navigation example" style="text-align: center; margin-top: 3em;">
 								 <ul class="pagination justify-content-center" style="text-align: center;">
@@ -264,25 +410,126 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								 </nav>
 							</div> <!-- / 수신쪽지함 -->
 
-							<div role="tabpanel" class="tab-pane" id="profile"> <!-- 발신쪽지함 -->
-								<table class="dormBoardTable row-md-10 table NamumGFont " style="height: 60px; margin-left:3em; width: 100em; text-align: center; ">
+							<div role="tabpanel" class="tab-pane" id="profile" style="overflow: none!important;"> <!-- 발신쪽지함 -->
+								<div style="height: 650px;  overflow: none!important;">
+									<table class="dormBoardTable row-md-10 table NamumGFont " style="height: 60px; margin-left:3em; width: 100em; text-align: center; overflow: none!important; ">
+	
+										<thead  class="" style="background-color: teal; ">
+											<tr >
+												<th scope="col" > <span class="glyphicon glyphicon-envelope"></span> </th> <!--쪽지번호 hidden-->
+												<th scope="col">&nbsp;&nbsp; 내용</th>
+												<th scope="col">&nbsp;받는 사람</th>
+												<th scope="col">&nbsp;&nbsp;발신날짜</th>
+								
+											</tr>
+										</thead>
+										
+										<tbody  id="table-hover" class="sentMsg_height"  >
+												<tr  data-toggle="modal" data-target="#sentMsg"  >
+													<td><input type="hidden" value="msgNo"></td>
+													<td>네 맞습니다^__^</td>
+													<td>테스트유저</td>
+													<td>2020.09.25</td>
+													
+												</tr>
+												<tr  data-toggle="modal" data-target="#sentMsg"  >
+													<td><input type="hidden" value="msgNo"></td>
+													<td>네 맞습니다^__^</td>
+													<td>테스트유저</td>
+													<td>2020.09.25</td>
+												
+												</tr>
+												<tr  data-toggle="modal" data-target="#sentMsg"  >
+													<td><input type="hidden" value="msgNo"></td>
+													<td>네 맞습니다^__^</td>
+													<td>테스트유저</td>
+													<td>2020.09.25</td>
+													
+												</tr>
+												<tr  data-toggle="modal" data-target="#sentMsg"  >
+													<td><input type="hidden" value="msgNo"></td>
+													<td>네 맞습니다^__^</td>
+													<td>테스트유저</td>
+													<td>2020.09.25</td>
+													
+												</tr>
+												<tr  data-toggle="modal" data-target="#sentMsg"  >
+													<td><input type="hidden" value="msgNo"></td>
+													<td>네 맞습니다^__^</td>
+													<td>테스트유저</td>
+													<td>2020.09.25</td>
+										
+												</tr>
+												<tr  data-toggle="modal" data-target="#sentMsg"  >
+													<td><input type="hidden" value="msgNo"></td>
+													<td>네 맞습니다^__^</td>
+													<td>테스트유저</td>
+													<td>2020.09.25</td>
+													
+												</tr>
+												<tr  data-toggle="modal" data-target="#sentMsg"  >
+													<td><input type="hidden" value="msgNo"></td>
+													<td>네 맞습니다^__^</td>
+													<td>테스트유저</td>
+													<td>2020.09.25</td>
+													
+												</tr>
+												<tr  data-toggle="modal" data-target="#sentMsg"  >
+													<td><input type="hidden" value="msgNo"></td>
+													<td>네 맞습니다^__^</td>
+													<td>테스트유저</td>
+													<td>2020.09.25</td>
+													
+												</tr>
+												<tr  data-toggle="modal" data-target="#sentMsg"  >
+													<td><input type="hidden" value="msgNo"></td>
+													<td>네 맞습니다^__^</td>
+													<td>테스트유저</td>
+													<td>2020.09.25</td>
+													
+												</tr>
+												<tr  data-toggle="modal" data-target="#sentMsg"  >
+													<td><input type="hidden" value="msgNo"></td>
+													<td>네 맞습니다^__^</td>
+													<td>테스트유저</td>
+													<td>2020.09.25</td>
+												
+												</tr>
 
-					
-									<thead style="background-color: teal; ">
-										<tr >
-											<th scope="col" >&nbsp;&nbsp; 글 번호</th>
-											<th scope="col">&nbsp;&nbsp; 제목</th>
-											<th scope="col">&nbsp;작성자</th>
-											<th scope="col">&nbsp;&nbsp;등록일</th>
-											<th scope="col">&nbsp;&nbsp;조회수</th>
-											<th scope="col">&nbsp;&nbsp;추천수</th>
-										</tr>
-									</thead>
-									
-									<tbody style="background-color: rgb(255, 255, 255);" >
-											
-									</tbody>
-								</table>
+
+												
+										</tbody>
+									</table>
+								</div>
+								
+								<!--발신 쪽지 모달 -->
+								<div class="modal fade" id="sentMsg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog " role="document" style="padding-left: 200px; padding-right: 200px; padding-top:600px;padding-bottom:300px;">
+										<div class="modal-content modal-lg">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">보낸 쪽지 확인</h5>
+											</div>
+											<div class="modal-body">
+													
+													
+														<input type="hidden" value="" placeholder="쪽지 번호 " id="">
+															
+															<span> 테스트유저 </span> <small>님 께 발송한 쪽지입니다. </small>
+														
+	 
+															<br><br>
+															<small style="line-height: -4em;">내용</small>
+															<textarea class="NamumGFont"  style="height: 8em; width: 750px; margin-left: 14px;">네 맞습니다~~^__^</textarea>
+										
+	
+											<br><br>
+								
+										</div>
+										</div>
+									</div>
+							
+							</div> <!-- 발신 쪽지 모달 끝 -->
+								
 
 								<nav aria-label="Page navigation example" style="text-align: center; margin-top: 3em;">
 								 <ul class="pagination justify-content-center" style="text-align: center;">
@@ -306,6 +553,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								 </ul>
 								 </nav>
 							</div>  <!-- / 발신쪽지함 -->
+
 						</div> 	<!-- / Tab panes -->
 
 					</div> 	<!-- / Nav tabs -->
