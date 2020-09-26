@@ -54,6 +54,7 @@ body > div.banner > div.w3l_banner_nav_right.justify-content-center > div > div 
 
 }
 
+
 .card_boardList{
 	height: 900px;
 	width: 1700px;
@@ -88,6 +89,23 @@ body > div.banner > div.w3l_banner_nav_right.justify-content-center > div > div 
 	border-radius: 5px;
 }
 
+.card_myPage{
+	height: 900px;
+	width: 1700px;
+	margin-top: 0em;
+	margin-bottom: auto;	
+	background-color: #ffffff;
+	overflow: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
 
 
 .card_saleDetail{
@@ -119,14 +137,12 @@ body > div.banner > div.w3l_banner_nav_right.justify-content-center > div > div 
 
 
 .card_faq{
-	height: 900px;
+	height: auto;
 	width: 1700px;
-	margin-top: 5em;
-	margin-bottom: auto;	
+	margin-top: 3em;
+	margin-bottom: 3em;;	
 	background-color: #ffffff;
 	overflow: auto;
-	position: relative;
-	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	padding: 10px;
