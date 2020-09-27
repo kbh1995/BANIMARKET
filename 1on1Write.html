@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title> 바니마켓 - 게시글 상세보기</title>
+<title> 바니마켓 - 1:1문의 작성</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -31,7 +31,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 
-
+<script src="js/fileupload.js"></script>
 
 <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
@@ -133,7 +133,7 @@ body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > di
 			<a href="index.html" style="color: black;" class="NamumGFont">Home</a> 
 			<span>|</span>
 		</li>
-		<li class="NamumGFont"> 게시글 상세보기</li>
+		<li class="NamumGFont"> 1:1문의 작성</li>
 	</ul>
 </div>
 </div>
@@ -154,6 +154,7 @@ body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > di
 			 <!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 				<ul class="nav navbar-nav ">
+				
 					<li style="background-color:white!important; height:10em!important; ">
 						<div class="row-md-12" >
 							<div class=" "  style=" margin-bottom:0.5em; line-height:25px; text-align: center;" >
@@ -195,17 +196,17 @@ body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > di
 					</li>
 
 				<li style="background-color: rgba(255, 230, 118, 0.664)!important; height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >My Place</span></a></li>
-				<li ><a href="products.html">마이 페이지</a></li>
+				<li ><a href="myPage.html">마이 페이지</a></li>
 			
 				<li style="background-color: rgba(255, 230, 118, 0.664); height:3em!important;"><span style="font-weight: bold; line-height: 3em; padding-left: 3em;" >Community</span></a></li>
 				
-				<li><a href="household.html">바니마켓 공지사항</a></li>
+				<li><a href="notice.html">바니마켓 공지사항</a></li>
 				<li><a href="faqBoard.html">바니마켓 FAQ</a></li>
 
-				<li><a href="household.html">교내게시판</a></li>
+				<li><a href="classBoard.html">교내게시판</a></li>
 
 				<!--기숙사생 등급에게만 표출-->
-				<li><a href="household.html">기숙사게시판</a></li>
+				<li><a href="dormBoard.html">기숙사게시판</a></li>
 
 
 
@@ -229,287 +230,66 @@ body > div.banner > div.w3l_banner_nav_right > div > div > div.card-content > di
 	<div class="w3l_banner_nav_right" style="margin-top: 0em!important;">
 	<div class="w3_login justify-content-center" >
 		
+		<form method="POST">
 				<div class="card_saleDetail ">
 
 					<!-- 카드 헤더-->
-						<div class="row-md-12 " style="margin-left: 50px;">
-
-								<div class="col-sm-8 NamumGFont">
-										<h4 class="NamumGFont">[교내][팝니다]2020 시나공 정보처리기사 필기 / 실기</h4>
-								</div>
-
-								<div class="col-sm-2">
-									<small class="NamumGFont"> 작성자 </small>
-									&nbsp;&nbsp;
-									<span class="NamumGFont"> 바니바니당근당근 </span>
-								</div>
-
-								<div class="col-sm-2">
-									<small class="NamumGFont"> 작성일 </small>
-									&nbsp;&nbsp;
-									<span class="NamumGFont"> 2020.09.23 </span>
-						  	</div>
-							
-								<br /> <hr>
+						<div class="row-md-12 " style="margin-left:1em; margin-top:1em;">
+										
+								<div class="col-md-11">
+							<input type="text" class="NamumGFont form-control" placeholder="제목 입력">
+						</div>
+			</div>
+							<br />
 								
-							</div>
+							
 
 							<!-- 내용 -->
 								<div  class="card-content" >
 
-								<div class="row-md-12" style="margin-top: 1.5em; margin-right: 5em;">
-
-									<!-- 사진 영역 시작-->
-
-										<div class="col-md-4" >
-											<div class="w3l_banner_nav_right" >
-											<section class="slider">
-												<div class="flexslider">
-													<ul class="slides">
-														<li>
-															<div class="w3l_banner_nav_right_banner">
-																
-															</div>
-														</li>
-														<li>
-															<div class="w3l_banner_nav_right_banner1">
-															
-															</div>
-														</li>
-														<li>
-															<div class="w3l_banner_nav_right_banner2">
-
-															</div>
-														</li>
-													</ul>
-												</div>
-											</section>
-										</div>		
+									<!-- 상세 -->
+										<div class="col-md-12" style="margin-top: 1em; "> 
+												
+												
+												<div class="" style="height:600px;  overflow: auto; ">
 													
-										</div> <!-- 사진 영역 끝-->
-
-
-										<!-- 상세 -->
-										<div class="col-md-5" style="margin-top: 4em; "> 
-												
-												
-												<div class="" style="height: 20em; background-color: rgba(236, 229, 229, 0.295); overflow: auto; ">
-													<p class="NamumGFont-bg" style="padding-bottom:20px;padding-right:20px;padding-left:20px;padding-top:20px;">
-																정보처리산업기사 필기 실기 책 팔아여 <br>
-																이거 보고 필기 실기 둘 다 한 번에 합격했어용 <br>
-																필기책은 사용감 많구요<br>
-																그냥 문제만 보시는 용도로 추천합니다<br>
-																실기책은 기출문제집 빼고 사용감 거의 없어요<br>
-																원래 필기 21000 + 실기 31000 해서 52000원에 샀는데 <br>
-																두 개에 10000원에 팔아여 <br>
-																거래 월~수 오전 9시부터 오후 6시까지<br>
-																나래관에서 직거래 가능해여<br>
-																현금 계좌이체 다 돼요<br>
-																스크롤 테스트하기 너무 힘들다<br>
-																div height 넘어가면 <br>
-																overflow:auto;로 스크롤링 <br>
-													</p>
+													<textarea style="resize: none;height: 99%; width: 100%; border:1px solid lightgray; "placeholder="1:1문의 내용 입력" class="NamumGFont-bg"></textarea>
+															
 														
 												</div>
 
 												<br>
 
-												<div class="row-md-12" style="height: 1em;">
-												<div class="col-md-4" style="height: 2em; padding-left: 12px;"> 
-													<span class="badge badge-pill badge-primary NamumGFont " style="font-size: 15px;"> 가격 </span>	
-													&nbsp;&nbsp;
-													<strong class="NamumGFont" style="font-size: 20px; "> 10000 </strong>
-													<span class="NamumGFont " style="font-size: 15px;"> 원 </span>
-												</div>
-
-												<div class="col-md-4"  style="height: 2em; "> 
-													<span class="badge badge-pill badge-primary NamumGFont " style="font-size: 15px;"> 상태 </span>	
-													&nbsp;&nbsp;
-													<strong class="NamumGFont"> 판매 중 </strong>
-												</div>
-
-												<div class="col-md-2"  style="height: 2em; "> 
-													<span class="badge badge-pill badge-primary NamumGFont " style="font-size: 15px;"> 찜하기 </span>	
-												</div>
-												<div class="col-md-2 justify-content-center"  style="height: 2em;" > 
-													
-														<span id="loveit" class=" glyphicon glyphicon-heart  " style="font-size: 40px; line-height: 10px; color: gray;"></span>
-														<span>(1)</span>
-							
-												</div>
-											</div>
+	
 
 
-								<script>
-
-									/**
-											* 중복서브밋 방지
-											* 
-											* @returns {Boolean}
-											*/
-											var doubleSubmitFlag = false;
-											function doubleSubmitCheck(){
-													if(doubleSubmitFlag){
-															return doubleSubmitFlag;
-													}else{
-															doubleSubmitFlag = true;
-															return false;
-													}
-											}
-
-												/* 	loveit 클릭 시	*/
-
-												$("#loveit ").click( function() { 
-
-													if(doubleSubmitCheck()) return;
-													
-													if (confirm("해당 상품을 찜하시겠습니까?") == true){    //확인
-
-														/*Ajax*/
-
-													/* user_loveit 컬럼에 글 주소 삽입 
-													    마이페이지 내 찜 목록에서 뿌리기 
-															찜 목록 삭제는 내 찜 목록에서 가능*/
-
-														$(this).css('color','red');
-														alert("찜이 완료되었습니다. \n찜 목록 확인 및 삭제는 마이페이지의 내 찜 목록에서 가능합니다. ");
-
-																													
-														} else{   //취소
-
-																return false;
-														}
-              					 });
-											</script>
-										
-
-
-											<div class="row-md-12" style="height: 5.9em;">
-
-												<div class="col-md-12">
-												<a href="chatDetail.html" class="btn btn-block btn-warning NamumGFont " style="height: 5em; line-height: 4.5em;" >채팅하기</a>
-											</div>
-											</div>
-
-												<div class="row-12" style="margin-top: 1em;">
-												<div class="col-md-6">
-													<a href="" class="btn btn-block badge-self NamumGFont" style="color: white;">목록으로</a>
-												</div>
-
-												<div class="col-md-6"> <!--신고 모달 시작-->
-												         <a href="" class="btn badge-danger  btn-block" data-toggle="modal" data-target="#reportUser"  style="color: white;">신고하기</a>
-            						</div>
-
-												<div class="modal fade" id="reportUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-														<div class="modal-dialog " role="document" style="padding-left: 200px; padding-right: 200px; padding-top:300px;padding-bottom:300px;">
-															<div class="modal-content modal-lg">
-																<div class="modal-header">
-																	<h5 class="modal-title" id="exampleModalLabel">해당 글 신고하기</h5>
-																</div>
-																<div class="modal-body">
-																		
-																		<form method="POST" action="reportUser">
-
-																			<input type="hidden" value="" placeholder="글 번호 ! " id="">
-																				
-																				<small>신고분류</small>
-																				&nbsp;&nbsp;
-																				<select>
-																						<option value="">신고분류 선택</option>
-																						<option value="">욕설 / 비방</option>
-																						<option value="">허위상품 게시</option>
-																						<option value="">쓸 수 없는 상품</option>
-																						<option value="">공지위반</option>
-																						<option value="">기타</option>
-																				</select>
-
-																				<br><br>
-																				<small style="line-height: -4em;">신고사유</small>
-																				<textarea class="NamumGFont"  style="height: 8em; width: 750px; margin-left: 14px;">기타 선택 사유 또는 추가 설명 작성</textarea>
-															
-
-																<br><br>
-
-																<div class="modal-footer" style="margin-right: 1em;">
-																	<button type="reset" class="btn btn-info" data-dismiss="modal">신고 취소</button>
-																	<button type="submit" class="btn btn-danger">신고하기</button>
-																</div>
-															</form>
-															</div>
-															</div>
-														</div>
-												
-												</div> <!-- 신고 모달 끝 -->
-											</div>
 
 										</div>
 										<!--상세 끝-->
+							
+							
 
+						
 
-										<!--프로필 시작-->
-										<div class="col-md-3 bg-warning" style="margin-top: 4em ; height: 500px; ">
-
-											<div class="brand_logo_container " style="margin-top: 6.5em; margin-left: 5.5em; ">
-													<a  href="index.html"><img src="images/userProfileEx.jpg" class="brand_logo" alt="Logo"></a>
-											</div>
-
-											<div class="" style="margin-top: 13em; text-align: center; height: 500px; ">
-												
-												<span class="badge badge-pill badge-info NamumGFont-bg"  >바니바니당근당근</span>
-												
-												<br><br>
-
-												<span class="NamumGFont">기숙사생</span>
-												<i class="NamumGFont">&nbsp;&nbsp; | &nbsp;&nbsp;</i>
-												<a href="othersProfile.html" class="NamumGFont" style="color:black" >&nbsp;&nbsp;<span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;놀러가기</a>
-												<small class="NamumGFont">  </small>
-
-												<hr>
-												<span class="NamumGFont">평점</span>
-												&nbsp;
-												<span class="badge badge-pill badge-info NamumGFont-bg " >★★★★★ <small> ( 10.0점 )</small></span>
-
-												<br><br>
-
-												<span class="NamumGFont">최근 후기</span> <!-- 후기 작성일 기준 3개 표출-->
-												<br>
-												<span class="badge badge-pill badge-self NamumGFont-bg" style="width: 15em; margin-bottom: 10px;" >
-													시간 잘 맞춰서 좋았어요
-												</span>
-												
-												<span class="badge badge-pill badge-self NamumGFont-bg" style="width: 15em; margin-bottom: 10px;" >
-													설명을 친절하게 해줬음
-												</span>
-
-												<span class="badge badge-pill badge-self NamumGFont-bg" style="width: 15em; margin-bottom: 10px;" >
-													ㄱㅊㄱㅊ 매너있음
-												</span>
-
-											</div>
-
-
-										</div> <!-- 프로필 끝 -->
-										
-
-
-								</div>								
-							</div> <!-- 내용 끝 -->
-
+							</div>
 							<br /> <hr>
 							<div class="row-12">
 								<div class="col-md-7" style="margin-right: 6.5em;"></div>
 								<div class="col-md-2">
-									<a href="product_saleUpdate.html" class="btn btn-block badge-self NamumGFont" style="color: white;">수정</a>
+									<button type="submit" class="btn btn-block badge-danger NamumGFont" style="color: white;">등록취소</button>
 								</div>
 								<div class="col-md-2">
-									<a href="" class="btn btn-block badge-danger NamumGFont" style="color: white;">삭제</a>
+									<button type="submit" class="btn btn-block badge-success NamumGFont" style="color: white;">등록하기</button>
 								</div>
 								</div>
-				</div>
+						</div>
+
+
+							</form>
+							</div> <!-- 내용 끝 -->
+						</div>
+
 				
-			</div>
-			
-		</div>
 
 	<div class="clearfix"></div>
 </div>
