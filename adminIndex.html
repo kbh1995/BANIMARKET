@@ -355,16 +355,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															<div class="input-group mb-2">
 																<div class="input-group-append NamumGFont">
 																	<span class="glyphicon glyphicon-education"></span>  <label style="padding-right: 1em;"> 회원구분 </label>
-
-																<span>기숙사생</span>
-																
+																	<input type="radio" name="student" class="NamumGFont" value="재학생" checked>&nbsp;재학생
+																	<small>(학교 재학 증빙 필요)</small>
+																	<i style="padding-left: 4em;">&nbsp;</i>
+																	<input type="radio" name="dorm" class="NamumGFont" value="기숙사생" >&nbsp;기숙사생
+																	<small>(학교 재학 및 기숙사 입사 증빙 필요)</small>
 																</div>
 															</div>
 							
 															<div class="input-group mb-2">
 																<div class="input-group-append">
 																	<span class="glyphicon glyphicon-chevron-right"></span>  <label style="padding-right: 3em;"> 학번 </label>
-																	<span>2007000000</span>
+										<input type="text" name="" class="input_pass NamumGFont" value="2007110025" placeholder="" style="width: 14.5em;">
 																
 																	<i style="padding-left: 3em;">&nbsp;</i>
 																
@@ -378,11 +380,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<div class="input-group-append NamumGFont ">
 															<span class="glyphicon glyphicon-chevron-right"></span>  <label style="padding-right: 1em;"> 학교선택 </label>
 																		
-																		<span> 대전광역시 </span>
-																				
-							
-															
-																		<span>한국폴리텍대학 대전캠퍼스</span> 
+															<select name="location" style="width: 10em;">
+																<option value="" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;지역 선택</option>
+																<option value="seoul">&nbsp;서울특별시</option>
+																<option value="busan">&nbsp;부산광역시</option>
+																<option value="daegu">&nbsp;대구광역시</option>
+																<option value="incheon">&nbsp;인천광역시</option>
+																<option value="gwangju">&nbsp;광주광역시</option>
+																<option value="daejeon" selected>&nbsp;대전광역시</option>
+																<option value="ulsan">&nbsp;울산광역시</option>
+																<option value="sejong">&nbsp;세종특별자치시</option>
+																<option value="gyeonggido">&nbsp;경기도</option>
+																<option value="gangwondo">&nbsp;강원도</option>
+																<option value="chungcheongdo">&nbsp;충청도</option>
+																<option value="jeonrado">&nbsp;전라도</option>
+																<option value="gyeongsangdo">&nbsp;경상도</option>
+																<option value="jejudo">&nbsp;제주도</option>
+														</select>
+			
+														<!-- 지역 선택 시 ajax로 schoolName select에 해당 지역 학교 표출 필요 -->
+														<script>
+			
+														</script>
+														
+														<select name="schoolName" style="width: 24.5em;">
+															<option value="" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;한국폴리텍대학 대전캠퍼스</option>
+													</select>
 							
 														</div>
 													</div>
@@ -410,12 +433,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							
 												<small class="NamumGFont">경고 3회 누적 시 강퇴처리</small> <br>
 												<span class="NamumGFont"> 현재 경고 횟수 : </span>
-												<span class="NamumGFont">0</span>
+												<span class="NamumGFont">1</span>
 												<span class="NamumGFont">회</span>
 													</div>
 											
 													<div class="modal-footer" style="margin-right: 1em; margin-top:4em;">
 														<button type="reset" class="btn btn-info" data-dismiss="modal">닫기</button>
+														<button type="" class="btn btn-success">주요정보 수정</button>
 														<button type="" class="btn btn-danger">경고</button>
 												</div>
 											</form>
@@ -437,9 +461,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-md-1">
 			
 			<select name="searchKey" class="custom-select " id="inlineFormCustomSelect" style="width: 7em; height: 2.1em; ">
-				<option value="title" selected>제목</option>
-				<option value="content">내용</option>
-				<option value="memberId">작성자</option>
+				<option value="title" selected>회원아이디</option>
+				<option value="content">회원구분</option>
+				<option value="memberId">회원등급</option>
 			</select>
 		</div>
 
