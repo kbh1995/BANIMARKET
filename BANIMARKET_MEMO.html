@@ -14,21 +14,66 @@
       product_electronics
       product_books
       product_clothes
-      product_etc
-                                    - 각 게시판 당 말머리 두 개 사용 :  [교내] | [기숙사] && [판매] | [구매] | [교환] 
+      product_etc  - 각 게시판 당 말머리 두 개 사용 :  [교내] | [기숙사] && [판매] | [구매] | [교환] 
 
-      product_saleDetail  - 게시글 상세보기 : 찜하기 & 채팅하기 & 신고하기 세 가지 기능
-                                     찜 개수 COUNT(*) WHERE="BOARD_NO"로 보여주기 ?
+      product_saleDetail  - 게시글 상세보기 : 찜하기 & 채팅하기 & 신고하기 세 가지 기능 / 찜 개수 보여주기
       product_saleWrite   
       product_saleUpdate
-      ss
-      5 / 
+      
+  5 / 사용자 게시판 
+     DormBoard_Main
+     DormBoard_Write
+     DormBoard_Update
+     DormBoard_Detail
 
-      +
+     ClassBoard_Main
+     ClassBoard_Write
+     ClassBoard_Update
+     ClassBoard_Detail
 
-      관리자페이지 + 1:1 o+ othersProfile o
+  6 / FAQ
+     FaqBoard_Main 
+     FaqBoard_Write
+     FaqBoard_Update
+
+  7 / Notice
+     Notice_Main
+     Notice_Write
+     Notice_Update
+     Notice_Detail
+
+  8 / 1on1  -- list는 MyPage 1:1문의 탭에서 확인
+     1on1_Write
+     1on1_Detail
+     1on1_Answer
+
+  9 / MyPage -- 평점 구현 / 리뷰 작성 페이지 구현해야함
+     MyPage -- 탭으로 구분
+
+ 10 / OthersProfile
+     OthersProfile
+
+ 11 / Chatting -- 채팅 시작은 product_saleDetail에서만 가능 ( 그 외 댓글 & 쪽지만 가능 )
+     Chatting_List
+     Chatting_Detail
+
+ 12 / Personal Message  -- 쪽지 보내기는 Dorm/ClassBoard_Detail 이나 othersProfile에서 가능 
+     PM_list -- modal로 수신쪽지 확인 / 답장 발송 가능
+
+ 13 / AdminPage
+     AdminIndex -- 탭으로 구분하거나.. 따로 메뉴 만들기
 
 
+ 
+
+     + 안전거래시스템
+     + 평점구현
+     + 구글 / 카카오 / 네이버 로그인 API 사용 -- 로그인 시 회원등급 W -> 마이페이지 접근하여 추가 정보 / 증빙서류 입력 시 adminPage에 신규회원으로 뜨기
+       회원 승인 시 회원이 기입한 재학생 또는 기숙사생으로 등급 변경
+     + 네비게이션 메뉴 바 토글
+     
+ 
+ 
 
       모든 SYSDATE는 시간,분까지 입력
 
